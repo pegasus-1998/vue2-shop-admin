@@ -1,0 +1,23 @@
+$default-color: #f03726;
+.bx {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear::after {
+    display: block;
+    content:'';
+    clear: both;
+}
+
+.el-input__inner:hover {
+    border-color: $default-color;
+}
+.el-button--primary:hover, .el-button--primary:focus {
+    background: $default-color;
+}

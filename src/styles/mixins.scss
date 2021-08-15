@@ -1,0 +1,48 @@
+//超出一行文本省略
+@mixin overflow() {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  
+//多行超出文本省略
+@mixin overflow-more($num) {
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:$num;
+    display: -moz-box; 
+    -moz-line-clamp: $num !important;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+}
+
+//绝对剧中
+@mixin center {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+//水平方居中
+@mixin hvCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//垂直居中
+@mixin vCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//贴边
+@mixin spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 

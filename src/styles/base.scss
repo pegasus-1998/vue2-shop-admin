@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
+    margin: 0;
+    padding: 0;
+}  
+body {
+    color: #6C6C6C;
+    font-size:  14px;
+    min-width: 1350px;
+    margin: 0 auto;
+}
+img {
+    vertical-align: middle;
+    border: none;
+}
+input,
+button {
+    outline: none;
+}
+
+a,
+button {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+}
