@@ -6,12 +6,16 @@
 html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
     margin: 0;
     padding: 0;
-}  
+}
+html {
+    height: 100%;
+}
 body {
     color: #6C6C6C;
     font-size:  14px;
     min-width: 1350px;
     margin: 0 auto;
+    height: 100%;
 }
 img {
     vertical-align: middle;

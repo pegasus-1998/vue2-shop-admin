@@ -9,10 +9,12 @@ $default-color: #f03726;
 .fr {
     float: right;
 }
-.clear::after {
-    display: block;
-    content:'';
-    clear: both;
+.clear {
+    &::after {
+        display: block;
+        content:'';
+        clear: both;
+    }
 }
 
 .el-input__inner:hover {
