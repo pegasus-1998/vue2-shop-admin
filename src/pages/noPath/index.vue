@@ -5,11 +5,7 @@
     <el-button type="primary" @click="$router.replace('/home')">回到首页</el-button>
   </div>
 </template>
-<script>
-export default {
- 
-}
-</script>
+
 <style lang="scss" scoped>
     .no-path {
         padding: 70px;

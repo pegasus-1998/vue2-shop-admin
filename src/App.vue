@@ -5,16 +5,25 @@
          <router-view></router-view>
       </keep-alive>
       <layout-bottom></layout-bottom>
+      <back-top></back-top>
   </div>
 </template>
 
  <script>
  import layoutHeader from '@/layout/layoutHeader.vue'
  import layoutBottom from '@/layout/layoutBottom.vue'
+ 
  export default {
-    components: { layoutHeader, layoutBottom },
+    components: { layoutHeader, layoutBottom},
  }
  </script>
+
+ <style lang="scss" scoped>
+   #app {
+      height: 100%;
+      overflow: scroll;
+   }
+ </style>
  
  
  

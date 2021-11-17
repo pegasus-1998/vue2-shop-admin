@@ -8,7 +8,7 @@ export default {
         })
 
         Vue.filter('formatSex', function(value) {
-            if(value == 0) {
+            if(value === 0) {
                 return '女'
             }else {
                 return '男'

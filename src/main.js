@@ -5,7 +5,7 @@ import store from './store'
 import '@/element'
 import '@/styles/index.scss'
 import '@/styles/element-variables.scss'
-import globalComponents from '@/components/index.js'
+import globalComponents from '@/globalCom/index.js'
 import VueLazyload from 'vue-lazyload'
 import directives from '@/directives'
 

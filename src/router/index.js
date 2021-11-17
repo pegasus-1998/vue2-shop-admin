@@ -18,8 +18,21 @@ const routes = [
      meta: {
        title: '个人信息'
      }
+   },
+   {
+     path: '*',
+     component: () => import('@/pages/error/404.vue'),
+     meta: {
+       title: '404'
+     }
    }
 ]
+
+//解决点击路由跳转同名报错的问题
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const router = new VueRouter({
   routes

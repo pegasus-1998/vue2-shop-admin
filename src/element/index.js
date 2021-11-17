@@ -17,7 +17,8 @@ import {
     TabPane,
     Avatar,
     Carousel,
-    CarouselItem
+    CarouselItem,
+    Backtop
   } from 'element-ui'
   
 Vue.use(Row)
@@ -35,6 +36,7 @@ Vue.use(TabPane)
 Vue.use(Avatar)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
+Vue.use(Backtop)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 
