@@ -24,56 +24,78 @@
           </el-input>
           <el-button type="primary" @click="login">登录</el-button>
           <div class="bottom">
-              <span>账号：admin</span>
-              <span>密码：123456</span>
-              <span>直接登录</span>
+            <span>账号：admin</span>
+            <span>密码：123456</span>
           </div>
         </el-tab-pane>
         <el-tab-pane label="短信登录" name="second">
-            <el-empty description="敬请期待"></el-empty>
+          <el-empty description="敬请期待"></el-empty>
         </el-tab-pane>
         <el-tab-pane label="其它登录" name="three">
-            <el-empty description="敬请期待"></el-empty>
+          <el-empty description="敬请期待"></el-empty>
         </el-tab-pane>
       </el-tabs>
     </div>
   </div>
 </template>
 <script>
+import { mapState, mapMutations } from "vuex";
 export default {
   data() {
     return {
       activeName: "first",
       loginObj: {
         account: "admin",
-        password: "123456",
+        password: 123456,
       },
     };
   },
+  computed: {
+        ...mapState("userModule", ["users","token","userIdx"]),
+  },
   methods: {
-      login() {
-          if(localStorage.getItem('token') == '6v6v6v') {
-              this.$message({
-                  type: 'warning',
-                  message: '已经登录了亲！'
-              })
-              return
-          }
-          const { account, password } = this.loginObj
-          if(account === 'admin' && password === '123456') {
-              this.$message({
-                  type: 'success',
-                  message: '登录成功！'
-              })
-            localStorage.setItem("token", "6v6v6v");
-            this.$router.replace('/person')
-          }else {
-              this.$message({
-                  type: 'error',
-                  message: '账号密码不正确'
-              })
-          }
+    ...mapMutations('userModule',{SET_USERS_INDEX: 'SET_USERS_INDEX',SET_TOKEN: 'SET_TOKEN'}),
+    login() {
+      const flag = this.users.some((item, index) => {
+        if(item.userName === this.loginObj.account && item.password === this.loginObj.password) {
+          this.$message({
+            type: 'success',
+            message: '登录成功'
+          })
+          this.SET_USERS_INDEX(index)
+          this.SET_TOKEN(item.token)
+          this.$router.replace("/person");
+        }else {
+          this.$message({
+            type: 'warning',
+            message: '账号密码不正确'
+          })
+        }
+      })
+    },
+    login2() {
+      if (localStorage.getItem("token") == "6v6v6v") {
+        this.$message({
+          type: "warning",
+          message: "已经登录了亲！",
+        });
+        return;
       }
+      const { account, password } = this.loginObj;
+      if (account === "admin" && password === "123456") {
+        this.$message({
+          type: "success",
+          message: "登录成功！",
+        });
+        localStorage.setItem("token", "6v6v6v");
+        this.$router.replace("/person");
+      } else {
+        this.$message({
+          type: "error",
+          message: "账号密码不正确",
+        });
+      }
+    },
   },
 };
 </script>
@@ -112,19 +134,19 @@ export default {
         }
       }
       .el-button {
-          display: block;
-          margin: 15px auto;
-          width: 60%;
-          height: 55px;
-          font-size: 18px;
-          letter-spacing: 15px;
-          color: #fff;
+        display: block;
+        margin: 15px auto;
+        width: 60%;
+        height: 55px;
+        font-size: 18px;
+        letter-spacing: 15px;
+        color: #fff;
       }
       .bottom {
         margin-top: 25px;
         span {
-            font-size: 17px;
-            margin-left: 15px;
+          font-size: 17px;
+          margin-left: 15px;
         }
       }
     }

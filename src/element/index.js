@@ -18,7 +18,12 @@ import {
     Avatar,
     Carousel,
     CarouselItem,
-    Backtop
+    Backtop,
+    Image,
+    Dialog,
+    Form,
+    FormItem,
+    Switch
   } from 'element-ui'
   
 Vue.use(Row)
@@ -37,6 +42,11 @@ Vue.use(Avatar)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
 Vue.use(Backtop)
+Vue.use(Image)
+Vue.use(Dialog)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Switch)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 

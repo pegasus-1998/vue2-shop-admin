@@ -8,6 +8,8 @@ import '@/styles/element-variables.scss'
 import globalComponents from '@/globalCom/index.js'
 import VueLazyload from 'vue-lazyload'
 import directives from '@/directives'
+import { nanoid } from 'nanoid'
+
 
 Vue.use(VueLazyload, {
   loading: require('@/images/load.gif'),
@@ -16,9 +18,9 @@ Vue.use(VueLazyload, {
 Vue.use(globalComponents)
 Vue.use(directives)
 Vue.prototype.$bus = new Vue()
+Vue.prototype.$nanoid = nanoid
 Vue.config.productionTip = false
 
- 
 new Vue({
   router,
   store,

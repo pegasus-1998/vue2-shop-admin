@@ -14,7 +14,7 @@
  import layoutBottom from '@/layout/layoutBottom.vue'
  
  export default {
-    components: { layoutHeader, layoutBottom},
+    components: { layoutHeader, layoutBottom },
  }
  </script>
 

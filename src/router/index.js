@@ -43,10 +43,12 @@ VueRouter.prototype.goBack = function () {
 }
 
 router.beforeEach((to,from,next) => {
-  if(!to.matched[0]) {
-    next('/pathError')
+  if(to.path !== '/person') {
+    next()
+  }else {
+    console.log('验证处理')
+    next()
   }
-  next()
 })
 
 router.afterEach((to,from) => {

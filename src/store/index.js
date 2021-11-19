@@ -4,12 +4,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import shopCarModule from './modules/shopCar'
+import userModule from './modules/user'
 import createVuexAlong from "vuex-along";
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  strict: process.env.NODE_ENV !== 'production',
   modules: {
-    shopCarModule
+    shopCarModule,
+    userModule
   },
   plugins: [
     createVuexAlong({
@@ -18,7 +21,7 @@ export default new Vuex.Store({
 
       },
       session: {  //会话存储
-        list: ["shopCarModule.shopMessage"],
+        list: ["shopCarModule.shopMessage", "userModule.users"],
       },
     }),
   ],
