@@ -4,7 +4,7 @@ import homeRouter from './home'
 import seckillRouter from './seckill'
 import shopCarRouter from './shopCar'
 import otherRoute from './otherRoute'
-
+import store from '@/store'
 Vue.use(VueRouter)
 
 const routes = [
@@ -46,13 +46,21 @@ router.beforeEach((to,from,next) => {
   if(to.path !== '/person') {
     next()
   }else {
-    console.log('验证处理')
-    next()
+    const users = store.state.userModule.users
+    const token = store.state.userModule.token
+    const flag = users.some(item => item.token === token)
+    if(!flag) {
+      next('/account')
+      Vue.prototype.$message({
+        type: 'error',
+        message: '请先登录！'
+      })
+    }else {
+      next()
+    }
   }
 })
 
-router.afterEach((to,from) => {
-  document.title = to.meta.title || '淘宝网 - 淘！我喜欢'
-})
+router.afterEach(to => document.title = to.meta.title || '淘宝网 - 淘！我喜欢')
 
 export default router

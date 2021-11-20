@@ -1,5 +1,5 @@
 <template>
-  <el-dialog title="修改收获信息" :visible.sync="flag">
+  <el-dialog title="修改收货信息" :visible.sync="flag">
     <el-form label-width="80px">
       <el-form-item label="收货人">
         <el-input></el-input>

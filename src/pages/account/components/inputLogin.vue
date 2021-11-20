@@ -51,12 +51,12 @@ export default {
     };
   },
   computed: {
-        ...mapState("userModule", ["users","token","userIdx"]),
+    ...mapState("userModule", ["users","token","userIdx"]),
   },
   methods: {
     ...mapMutations('userModule',{SET_USERS_INDEX: 'SET_USERS_INDEX',SET_TOKEN: 'SET_TOKEN'}),
     login() {
-      const flag = this.users.some((item, index) => {
+     this.users.some((item, index) => {
         if(item.userName === this.loginObj.account && item.password === this.loginObj.password) {
           this.$message({
             type: 'success',
@@ -72,30 +72,7 @@ export default {
           })
         }
       })
-    },
-    login2() {
-      if (localStorage.getItem("token") == "6v6v6v") {
-        this.$message({
-          type: "warning",
-          message: "已经登录了亲！",
-        });
-        return;
-      }
-      const { account, password } = this.loginObj;
-      if (account === "admin" && password === "123456") {
-        this.$message({
-          type: "success",
-          message: "登录成功！",
-        });
-        localStorage.setItem("token", "6v6v6v");
-        this.$router.replace("/person");
-      } else {
-        this.$message({
-          type: "error",
-          message: "账号密码不正确",
-        });
-      }
-    },
+    }
   },
 };
 </script>

@@ -1,10 +1,12 @@
 <template>
   <div class="header">
     <div class="left">
-      <el-image :src="circleUrl[0]" :preview-src-list="circleUrl"></el-image>
+      <el-image 
+        :src="users[userIdx].headPicture" 
+        :preview-src-list="imgList"></el-image>
       <div>
-        <p class="sp1">{{ isLogin ? "admin" : "未登录" }}</p>
-        <p>个性签名：{{ isLogin ? "生活不仅眼前的苟且，还有诗和远方" : "" }}</p>
+        <p class="sp1">{{ users[userIdx].userName }}</p>
+        <p>个性签名：{{ users[userIdx].ps }}</p>
       </div>
     </div>
     <p>我的支付宝</p>
@@ -14,33 +16,23 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex";
 export default {
-  data() {
-    return {
-      isLogin: false,
-      circleUrl: [require("@/images/tx.jpg")],
-    };
-  },
-  created() {
-    if (localStorage.getItem("token") === "6v6v6v") {
-      this.isLogin = true;
-    } else {
-      this.isLogin = false;
-      this.$router.replace("/account");
-      this.$message({
-        type: "warning",
-        message: "请先登录！",
-      });
+  computed: {
+    ...mapState("userModule", ["users","token","userIdx"]),
+    imgList() {
+      return [this.users[this.userIdx].headPicture]
     }
   },
   methods: {
+    ...mapMutations('userModule',{CLEAR_TOKEN: 'CLEAR_TOKEN'}),
     outLogin() {
-      localStorage.setItem("token", "");
+      this.CLEAR_TOKEN()
       this.$router.replace("/account");
       this.$message({
         type: "success",
         message: "退出成功",
-      });
+      })
     },
   },
 };
