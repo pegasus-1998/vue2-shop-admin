@@ -58,10 +58,12 @@ export default {
         color: rgb(206, 182, 190);
     }
     .main {
+        flex: 1;
+        padding-left: 35px;
         .sp1 {
             color: #000;
-            font-weight: 700;
-            font-size: 21px;
+            font-weight: 500;
+            font-size: 19px;
         }
         .sp3 {
             color: $default-color;

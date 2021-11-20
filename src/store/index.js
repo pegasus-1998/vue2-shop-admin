@@ -15,14 +15,14 @@ export default new Vuex.Store({
     userModule
   },
   plugins: [
-    createVuexAlong({
+    createVuexAlong({  //默认存贮是永久存储
       // name: "customName",  设置本地数据集合的名字，默认为 vuex-along
-      local: {   //永久存储
+      // local: {   //永久存储
 
-      },
-      session: {  //会话存储
-        list: ["shopCarModule.shopMessage", "userModule.users"],
-      },
+      // },
+      // session: {  //会话存储
+      //   list: ["shopCarModule.shopMessage", "userModule.users"],
+      // },
     }),
   ],
 })

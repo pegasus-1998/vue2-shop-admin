@@ -4,7 +4,8 @@ const userModule = {
     namespaced: true,
     state: {
         token: '',      //当前登录用户的token
-        userIdx: 0,      //当前登录的用户的在users中的索引
+        userIdx: 0,      //修改收货地址组件显示的是哪一条数据
+        addressIdx: 0,   //修改哪一个收货地址
         users: [         //保存着所有的用户
             {
                 userName: 'admin',
@@ -35,6 +36,11 @@ const userModule = {
             }
         ]
     },
+    getters: {
+        address({users, userIdx, addressIdx}) {
+            return users[userIdx].address[addressIdx]
+        }
+    },
     mutations: {
         SET_USERS_INDEX(state, idx) {
             state.userIdx = idx
@@ -44,6 +50,12 @@ const userModule = {
         },
         CLEAR_TOKEN(state) {
             state.token = ''
+        },
+        SET_ADDRESS_IDX({addressIdx}, idx) {
+            addressIdx = idx
+        },
+        SET_ADDRESS({users, userIdx, addressIdx}, obj) {
+            Object.assign(users[userIdx].address[addressIdx], obj)
         }
     }
 }
