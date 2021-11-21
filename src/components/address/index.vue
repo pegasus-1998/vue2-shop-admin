@@ -7,6 +7,7 @@
       :address="item"
     />
     <pull-message ref="pm"></pull-message>
+    <el-button type="primary" icon="el-icon-plus">添加收货地址</el-button>
   </div>
 </template>
 
@@ -17,7 +18,7 @@ import pullMessage from "./pullMessage.vue";
 export default {
   components: { item, pullMessage },
   computed: {
-    ...mapState('userModule', ['users', 'userIdx']),
+    ...mapState('userModule', ['users', 'userIdx'])
   },
   methods: {
     ...mapMutations('userModule', { SET_ADDRESS_IDX: 'SET_ADDRESS_IDX' }),
@@ -28,3 +29,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  .address {
+    .el-button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 35px;
+      width: 350px;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+  }
+</style>

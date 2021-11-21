@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      arrList: ['收获地址', '我的收藏', '我的物流', '我的钱包', '退款维权', '已购宝贝']
+      arrList: ['收货地址', '我的收藏', '我的物流', '我的钱包', '退款维权', '已购宝贝']
     }
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
         .item {
           cursor: pointer;
           margin: 12px 0;
-          font-size: 15px;
+          font-size: 16px;
           &:hover {
               text-align: right;
           }

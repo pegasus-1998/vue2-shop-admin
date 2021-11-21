@@ -1,5 +1,5 @@
 <template>
-  <el-dialog title="修改收货信息" :visible.sync="flag" v-if="flag">
+  <el-dialog title="修改收货信息" :visible.sync="flag" @open="openDialog">
     <el-form label-width="80px">
       <el-form-item label="收货人">
         <el-input v-model='nowAddress.name'></el-input>
@@ -42,14 +42,14 @@ export default {
       }
     },
     computed: {
-        ...mapState('userModule', ['users', 'userIdx']),
-        ...mapGetters('userModule', ['address']),
-    },
-    created() {
-      this.nowAddress = { ...this.address }
+        ...mapState('userModule', ['users', 'userIdx', 'addressIdx']),
+        // ...mapGetters('userModule', ['address']),
     },
     methods: {
       ...mapMutations('userModule', {SET_ADDRESS: 'SET_ADDRESS'}),
+      openDialog() {
+         this.nowAddress = { ...this.users[this.userIdx].address[this.addressIdx] }
+      },
       save() {
         this.$alert('您确定修改当前收货地址的信息吗？', '提示', {
           confirmButtonText: '确定',

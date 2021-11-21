@@ -1,5 +1,3 @@
-import Vue from 'vue'
-const vm = new Vue()
 const userModule = {
     namespaced: true,
     state: {
@@ -51,8 +49,8 @@ const userModule = {
         CLEAR_TOKEN(state) {
             state.token = ''
         },
-        SET_ADDRESS_IDX({addressIdx}, idx) {
-            addressIdx = idx
+        SET_ADDRESS_IDX(state, idx) {
+            state.addressIdx = idx
         },
         SET_ADDRESS({users, userIdx, addressIdx}, obj) {
             Object.assign(users[userIdx].address[addressIdx], obj)
