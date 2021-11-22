@@ -1,3 +1,4 @@
+import { interchangeArray } from '@/utils/arrayChange.js'
 const userModule = {
     namespaced: true,
     state: {
@@ -13,6 +14,7 @@ const userModule = {
                 token: '12345678910',
                 address: [          //所有的收获地址
                     {
+                        key: 100,
                         name: '比尔盖茨',
                         pro: '广东省',
                         city: '广州市',
@@ -22,6 +24,7 @@ const userModule = {
                         detailAddress: '华尔街10086号'  //详细地址
                     },
                     {
+                        key: 101,
                         name: '爱迪生',
                         pro: '安徽省',
                         city: '合肥市',
@@ -53,6 +56,10 @@ const userModule = {
             state.addressIdx = idx
         },
         SET_ADDRESS({users, userIdx, addressIdx}, obj) {
+            console.log(addressIdx)
+            if(obj.isDA) {
+                interchangeArray(users[userIdx].address, 0, addressIdx)
+            }
             Object.assign(users[userIdx].address[addressIdx], obj)
         }
     }

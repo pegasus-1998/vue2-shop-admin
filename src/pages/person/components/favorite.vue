@@ -1,6 +1,6 @@
 <template>
   <div class="favorite">
-      我的收藏
+      我的客服
   </div>
 </template>
 

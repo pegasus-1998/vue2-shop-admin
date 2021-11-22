@@ -1,6 +1,6 @@
 <template>
-  <div class="wallet">
-      我的钱包
+  <div class="eva">
+      我的评价
   </div>
 </template>
 

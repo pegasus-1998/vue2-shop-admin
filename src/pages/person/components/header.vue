@@ -6,11 +6,11 @@
         :preview-src-list="imgList"></el-image>
       <div>
         <p class="sp1">{{ users[userIdx].userName }}</p>
-        <p>个性签名：{{ users[userIdx].ps }}</p>
+        <p class="pcolor">个性签名：{{ users[userIdx].ps }}<i class="el-icon-edit"></i></p>
       </div>
     </div>
     <p>我的支付宝</p>
-    <p>我的优惠休息</p>
+    <p @click="$router.push('/shopCar')" class="pcolor">我的购物车</p>
     <el-button type="primary" @click="outLogin">退出登录</el-button>
   </div>
 </template>
@@ -69,6 +69,12 @@ export default {
   .el-button {
     color: #fff;
     width: 85px;
+  }
+  .pcolor {
+    cursor: pointer;
+    &:hover {
+      color: $default-color;
+    }
   }
 }
 </style>

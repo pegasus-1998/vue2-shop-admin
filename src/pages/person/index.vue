@@ -14,22 +14,22 @@ import personHeader from './components/header.vue'
 import personNav from './components/nav.vue'
 import personAddress from '@/components/address'
 import favorite from './components/favorite.vue'
-import logistics from './components/logistics.vue'
+import logistics from '@/components/logistics'
 import purchased from './components/purchased.vue'
-import refund from './components/refund.vue'
-import wallet from './components/wallet.vue'
+import eva from './components/eva.vue'
+import wallet from '@/components/wallet'
 import calendar from './components/calendar.vue'
 export default {
   components: { 
     VDistpicker, personHeader, personNav, 
     personAddress, favorite, logistics, 
-    purchased, refund, wallet, 
+    purchased, eva, wallet, 
     calendar 
   },
   data() {
     return {
-      showComs: ['personAddress','favorite','logistics','wallet','refund','purchased'],
-      active: 0,
+      showComs: ['personAddress','favorite','logistics','wallet','eva','purchased'],
+      active: 2,
     }
   }
 };

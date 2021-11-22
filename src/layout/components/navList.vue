@@ -5,6 +5,7 @@
     <router-link to="/shopCar" active-class="active">购物车</router-link>
     <router-link to="/account" active-class="active">账号</router-link>
     <router-link to="/person" active-class="active">个人信息</router-link>
+    <router-link to="/bazaar" active-class="active">主题市场</router-link>
   </div>
 </template>
 <script>

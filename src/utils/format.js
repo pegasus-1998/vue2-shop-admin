@@ -6,6 +6,7 @@ function dateFormat(_this) {
         recDate(_this)
     },1000)
 }
+
 function recDate(_this) {
     let val = dayjs(Date.now())
     _this.timers.month = val.$M + 1,

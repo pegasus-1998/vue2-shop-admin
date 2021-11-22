@@ -1,15 +1,14 @@
 <template>
-  <div class="refund">
-      退款维权
+  <div class="bazaar bx">
+      主题市场
   </div>
 </template>
-
 <script>
+
 export default {
 
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
 </style>
