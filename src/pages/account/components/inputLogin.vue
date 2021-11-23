@@ -51,7 +51,7 @@ export default {
     };
   },
   computed: {
-    ...mapState("userModule", ["users","token","userIdx"]),
+    ...mapState('userModule', ['users', 'token', 'userIdx']),
   },
   methods: {
     ...mapMutations('userModule',{SET_USERS_INDEX: 'SET_USERS_INDEX',SET_TOKEN: 'SET_TOKEN'}),

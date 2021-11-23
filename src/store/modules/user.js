@@ -56,7 +56,6 @@ const userModule = {
             state.addressIdx = idx
         },
         SET_ADDRESS({users, userIdx, addressIdx}, obj) {
-            console.log(addressIdx)
             if(obj.isDA) {
                 interchangeArray(users[userIdx].address, 0, addressIdx)
             }
