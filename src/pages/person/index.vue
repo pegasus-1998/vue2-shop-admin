@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       showComs: ['personAddress','favorite','logistics','wallet','eva','purchased'],
-      active: 2,
+      active: 1,
     }
   }
 };

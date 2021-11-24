@@ -1,33 +1,52 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import homeRouter from './home'
 import seckillRouter from './seckill'
 import shopCarRouter from './shopCar'
 import bazaarRouter from './bazaar'
-import otherRoute from './otherRoute'
 import store from '@/store'
 Vue.use(VueRouter)
 
 const routes = [
-   ...homeRouter,
-   ...seckillRouter,
-   ...shopCarRouter,
-   ...otherRoute,
-   bazaarRouter,
-   {
-     path: '/person',
-     component: () => import('@/pages/person'),
-     meta: {
-       title: '个人信息'
-     }
-   },
-   {
-     path: '*',
-     component: () => import('@/pages/error/404.vue'),
-     meta: {
-       title: '404'
-     }
-   }
+  {
+    path: '',
+    component: () => import('@/layout'),
+    children: [
+      ...homeRouter,
+      ...seckillRouter,
+      ...shopCarRouter,
+      bazaarRouter,
+      {
+        path: '/person',
+        component: () => import('@/pages/person'),
+        meta: {
+          title: '个人信息'
+        }
+      },
+    ]
+  },
+  {
+    path: '/account',
+    component: () => import('@/pages/account'),
+    meta: {
+      title: '账号'
+    }
+  },
+  {
+    path: '/detail',
+    component: () => import('@/pages/details'),
+    meta: {
+      title: '详情'
+    }
+  },
+  {
+    path: '*',
+    component: () => import('@/pages/error/404.vue'),
+    meta: {
+      title: '404'
+    }
+  }
 ]
 
 //解决点击路由跳转同名报错的问题

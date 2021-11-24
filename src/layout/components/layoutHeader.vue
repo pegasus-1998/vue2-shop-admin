@@ -7,8 +7,8 @@
   </div>
 </template>
 <script>
-import navList from './components/navList.vue'
-import navDate from './components/navDate.vue'
+import navList from './navList.vue'
+import navDate from './navDate.vue'
 export default {
     components: { navList, navDate }
 }

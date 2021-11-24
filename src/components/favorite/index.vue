@@ -1,12 +1,22 @@
 <template>
   <div class="favorite">
-      我的客服
+    <for-date></for-date>
+    <jw-chat></jw-chat>
   </div>
 </template>
-<script>
-export default {
+
  
+
+<script>
+import forDate from './forDate.vue'
+import jwChat from './jwChat.vue'
+export default {
+  components: { forDate, jwChat },
 }
 </script>
+
 <style lang="scss" scoped>
+  .favorite {
+
+  }
 </style>

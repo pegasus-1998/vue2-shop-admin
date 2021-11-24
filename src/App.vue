@@ -1,22 +1,8 @@
 <template>
   <div id="app">
-      <layout-header></layout-header>
-      <keep-alive include="home,login">
-         <router-view></router-view>
-      </keep-alive>
-      <layout-bottom></layout-bottom>
-      <back-top></back-top>
+     <router-view></router-view>
   </div>
 </template>
-
- <script>
- import layoutHeader from '@/layout/layoutHeader.vue'
- import layoutBottom from '@/layout/layoutBottom.vue'
- 
- export default {
-    components: { layoutHeader, layoutBottom },
- }
- </script>
 
  <style lang="scss" scoped>
    #app {

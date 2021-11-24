@@ -9,8 +9,9 @@ import globalComponents from '@/globalCom/index.js'
 import VueLazyload from 'vue-lazyload'
 import directives from '@/directives'
 import { nanoid } from 'nanoid'
+import JwChat from 'jwchat'
 
-
+Vue.use(JwChat)
 Vue.use(VueLazyload, {
   loading: require('@/images/load.gif'),
   // error: require('images/error.png') 

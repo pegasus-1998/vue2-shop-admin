@@ -25,7 +25,10 @@ import {
     FormItem,
     Switch,
     Step,
-    Steps
+    Steps,
+    Badge,
+    Popover,
+    Link
   } from 'element-ui'
   
 Vue.use(Row)
@@ -51,6 +54,9 @@ Vue.use(FormItem)
 Vue.use(Switch)
 Vue.use(Step)
 Vue.use(Steps)
+Vue.use(Badge)
+Vue.use(Popover)
+Vue.use(Link)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 

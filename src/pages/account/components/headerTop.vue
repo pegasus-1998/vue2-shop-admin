@@ -1,8 +1,8 @@
 <template>
   <div class="header-top bx">
       <img src="https://img.alicdn.com/tfs/TB1R5fsgyDsXe8jSZR0XXXK6FXa-281-80.jpg" alt="">
-      <div>
-         <i class="el-icon-edit"></i> 登录界面改进建议
+      <div @click="$router.replace('/')">
+         <i class="el-icon-menu"></i> 回到首页
       </div>
   </div>
 </template>
