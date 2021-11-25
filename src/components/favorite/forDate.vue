@@ -30,6 +30,6 @@ export default {
 <style lang="scss" scoped>
   .for-date {
     text-align: center;
-    margin: 25px 0;
+    margin-bottom: 10px;
   }
 </style>
