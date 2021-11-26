@@ -8,7 +8,7 @@ function dateFormat(_this) {
 }
 
 function recDate(_this) {
-    let val = dayjs(Date.now())
+    const val = dayjs(Date.now())
     _this.timers.month = val.$M + 1,
     _this.timers.day = val.$D,
     _this.timers.hour = val.$H,

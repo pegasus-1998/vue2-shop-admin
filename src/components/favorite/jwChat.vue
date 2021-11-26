@@ -15,7 +15,7 @@
 
 <script>
 import { mapState, mapMutations } from "vuex";
-import { list, ranOnTa } from '@/utils/talk.js'
+import { list, ranOnTa, talkDate } from '@/utils/talk.js'
 export default {
   data() {
     return {
@@ -31,10 +31,10 @@ export default {
       const msg = this.inputMsg;
       if (!msg) return;
       const msgObj = {
-        date: "2020/05/20 23:19:07",
+        date: talkDate(),
         text: { text: msg },
         mine: true,
-        name: "JwChat",
+        name: this.users[this.userIdx].userName,
         img: this.users[this.userIdx].headPicture,
       };
       this.list.push(msgObj);
@@ -59,8 +59,14 @@ export default {
   ::v-deep .el-button  {
     padding: 10px 19px;
   }
-  ::v-deep cite {
+  ::v-deep cite i {
+    color: #666;
     font-size: 13px !important;
+    font-style: italic !important;
+  }
+  ::v-deep cite {
+    color: rgb(50, 148, 205) !important;
+    font-size: 15px !important;
   }
   ::v-deep .web__main-user img {
     width: 50px !important;

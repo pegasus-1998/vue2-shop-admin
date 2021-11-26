@@ -1,18 +1,18 @@
-import { numRan } from '@/utils/numberDis.js'
-
+import { numRan } from './numberDis.js'
+import { recDate } from './format.js'
 const list = [
     {
-        date: "2020/04/25 21:19:07",
+        date: talkDate(),
         text: { text: "我是您的淘客服！" },
         mine: false,
-        name: "客服",
+        name: "淘客服",
         img: require('@/images/kf.png')
     },
     {
-        date: "2020/04/25 21:19:07",
+        date: talkDate(),
         text: { text: "你有什么话想对我说的吗？" },
         mine: false,
-        name: "客服",
+        name: "淘客服",
         img: require('@/images/kf.png')
     }
 ]
@@ -44,16 +44,26 @@ const ranTalk = [
 
 function ranOnTa() {
     return {
-        date: "2020/04/25 21:19:07",
+        date: talkDate(),
         text: { text: ranTalk[numRan()] },
         mine: false,
-        name: "客服",
+        name: "淘客服",
         img: require('@/images/kf.png')
     }
+}
+
+function talkDate() {
+    const obj = {
+        timers: {}
+    }
+    recDate(obj)
+    const { timers: { year, month, day, hour, minute, second} } = obj
+    return `${year}/${month}/${day} ${hour}:${minute}:${second}`
 }
 
 export {
     list,
     ranTalk,
-    ranOnTa
+    ranOnTa,
+    talkDate
 }
