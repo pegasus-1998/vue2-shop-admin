@@ -21,9 +21,45 @@
 
 ## 简介
 
-简单的仿淘宝热卖(素材来自于淘宝)
+仿淘宝PC端(素材来自于淘宝)
 
-vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-piczoom(放大镜)
+vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-piczoom(放大镜) + jwchat(聊天组件)
+
+## 前言
+
+:blush:vue3也出了快一年了，自己在工作中vue项目大大小小也做了好几个，但是一直没有自己的vue开源项目。到2021年下询的时候便开始着手这个项目。一开始的时候不知道要做什么样的项目，也找不到什么素材。于是就基于淘宝做了这个项目。项目的模块划分的十分清楚，非常方便阅读。这个项目基本把vue能用到的全用到了。如果觉得有写的不好的或者不足之处请联系作者。
+
+:blush:qq: 2226984343; wx: pegasus-1998
+
+## 技术栈
+
+> [vue.js](https://cn.vuejs.org/) 构建用户界面的 MVVM 框架， 易于上手，还便于与第三方库或既有项目合。
+
+> [vue-router](https://router.vuejs.org/zh/) Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。
+
+> [vuex](https://vuex.vuejs.org/zh/) 是一个专为 Vue.js 应用程序开发的状态管理模式。
+
+> [vue-cli](https://cli.vuejs.org/zh/) 基于 Vue.js 进行快速开发的完整系统，vue脚手架。
+
+> [element-ui](https://element.eleme.cn/#/zh-CN) 基于 Vue 2.0 的桌面端组件库, PC端而言这应该是vue用的最多的组件库。
+
+> [axios](https://www.w3cschool.cn/jquti/) Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js中。
+
+> [scss](https://www.sass.hk/docs/) css扩展语言，更高效地开发项目，Element的theme-chalk使用SCSS编写。
+
+> [vuex-along](https://www.npmjs.com/package/vuex-along) 持久化存储state的 vuex扩展。解决vuex中页面刷新数据丢失问题。
+
+> [vue-lazyload](https://github.com/hilongjw/vue-lazyload) vue图片懒加载
+
+> [vue-piczoom](https://www.npmjs.com/package/vue-piczoom/v/1.0.6) 基于vue2.x的电商图片放大镜插件。
+
+> [jwchat](https://codegi.gitee.io/jwchatdoc/) 基于element-ui开发的聊天插件。
+
+> [Lodash](https://www.lodashjs.com/) 一致性、模块化、高性能的 JavaScript 实用工具库
+
+> [fastmock](https://fastmock.site/#/) 简单好用的在线接口 MOCK 平台
+
+:blush:除开上面项目中还用到其它的...等
 
 ## 步骤
 

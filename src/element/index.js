@@ -28,7 +28,8 @@ import {
     Steps,
     Badge,
     Popover,
-    Link
+    Link,
+    Rate
   } from 'element-ui'
   
 Vue.use(Row)
@@ -57,6 +58,7 @@ Vue.use(Steps)
 Vue.use(Badge)
 Vue.use(Popover)
 Vue.use(Link)
+Vue.use(Rate)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 
