@@ -10,6 +10,7 @@ import VueLazyload from 'vue-lazyload'
 import directives from '@/directives'
 import { nanoid } from 'nanoid'
 import JwChat from 'jwchat'
+import _ from 'lodash'
 
 Vue.use(JwChat)
 Vue.use(VueLazyload, {
@@ -21,6 +22,7 @@ Vue.use(directives)
 Vue.prototype.$bus = new Vue()
 Vue.prototype.$nanoid = nanoid
 Vue.config.productionTip = false
+Vue.prototype._ = _
 
 new Vue({
   router,
