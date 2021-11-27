@@ -5,7 +5,10 @@ const bazaarRouter = {
     component: bazaar,
     meta: {
         title: '主题市场'
-    }
+    },
+    children: [
+        
+    ]
 }
 
 export default bazaarRouter
