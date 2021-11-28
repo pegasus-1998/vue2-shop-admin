@@ -24,8 +24,7 @@ export default {
    return {
      ztNavList
    }
-  },
-   methods:{}
+  }
 }
 </script>
 

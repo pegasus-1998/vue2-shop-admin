@@ -2,13 +2,15 @@
   <div class="bazaar bx">
     <left-nav></left-nav>
     <router-view></router-view>
+    <my-swiper></my-swiper>
   </div>
 </template>
-<script>
 
+<script>
 import leftNav from './components/leftNav.vue'
+import mySwiper from '@/components/mySwiper.vue'
 export default {
-  components: { leftNav }
+  components: { leftNav, mySwiper  },
 }
 </script>
 

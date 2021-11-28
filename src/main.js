@@ -11,7 +11,10 @@ import directives from '@/directives'
 import { nanoid } from 'nanoid'
 import JwChat from 'jwchat'
 import _ from 'lodash'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
+Vue.use(VueAwesomeSwiper) 
 Vue.use(JwChat)
 Vue.use(VueLazyload, {
   loading: require('@/images/load.gif'),

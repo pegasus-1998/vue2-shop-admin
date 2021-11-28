@@ -57,7 +57,9 @@ vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-pic
 
 > [Lodash](https://www.lodashjs.com/) 一致性、模块化、高性能的 JavaScript 实用工具库
 
-> [fastmock](https://fastmock.site/#/) 简单好用的在线接口 MOCK 平台
+> [vue-awesome-swiper](https://fastmock.site/#/) 简单好用的在线接口 MOCK 平台
+
+> [fastmock](https://github.com/surmon-china/vue-awesome-swiper/tree/v3.1.3) vue中swiper轮播
 
 :blush:除开上面项目中还用到其它的...等
 
