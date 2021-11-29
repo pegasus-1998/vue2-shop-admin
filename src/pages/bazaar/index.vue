@@ -3,7 +3,13 @@
     <left-nav></left-nav>
     <router-view></router-view>
     <b-title title='有好货' cor='#6699CE' fTitle='全民口碑'></b-title>
-    <my-swiper></my-swiper>
+    <my-swiper>
+      <template #con>
+        <!-- <swiper-slide>
+            <img src="@/images/swiper/swiper01.jpg" alt="">
+        </swiper-slide > -->
+      </template>
+    </my-swiper>
   </div>
 </template>
 

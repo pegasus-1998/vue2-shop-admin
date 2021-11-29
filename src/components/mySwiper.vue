@@ -1,8 +1,9 @@
 <template>
     <swiper :options='options'>
-        <swiper-slide>
+        <slot name="con"></slot>
+        <!-- <swiper-slide>
             <img src="@/images/swiper/swiper01.jpg" alt="">
-        </swiper-slide >
+        </swiper-slide > -->
     </swiper>
 </template>
 
