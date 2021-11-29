@@ -10,6 +10,7 @@
         </swiper-slide > -->
       </template>
     </my-swiper>
+    <b-title title='猜你喜欢' cor='#F40' fTitle='个性推荐'></b-title>
   </div>
 </template>
 
