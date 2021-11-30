@@ -57,7 +57,7 @@ VueRouter.prototype.push = function push(location) {
 
 const router = new VueRouter({
   routes,
-  mode: 'hash'  // history
+  mode: 'hash'  //history
 })
 
 VueRouter.prototype.goBack = function () {

@@ -9,6 +9,26 @@ function getHomeMockApi(path) {
         )
 }
 
+//获取主题市场有好货数据
+function getGoodShopApi() {
+    return getRequest(path)
+        .then(
+            res => res,
+            err => console.log('网络请求出错了')
+        )
+}
+
+//获取主题市场猜你喜欢数据
+function getGuessLikeApi() {
+    return getRequest()
+    .then(
+        res => res,
+        err => console.log('网络请求出错了')
+    )
+}
+
 export {
-    getHomeMockApi
+    getHomeMockApi,
+    getGoodShopApi,
+    getGuessLikeApi
 }

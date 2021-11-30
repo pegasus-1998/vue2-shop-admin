@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
     .b-title {
+        margin: 20px 0 10px 0;
         .sp1 {
             color: #000;
             font-weight: 500;

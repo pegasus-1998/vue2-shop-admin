@@ -9,18 +9,24 @@
 
 <script>
 export default {
+    props: {
+        swOptions: {
+            type: Object,
+            default() {
+                return {}
+            }
+        }
+    },
     data() {
         return {
             options: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 30,
                 autoplay: true,
                 loop: true,
+                ...this.swOptions
             }
         }
     }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
