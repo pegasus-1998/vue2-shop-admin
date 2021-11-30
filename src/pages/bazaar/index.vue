@@ -3,14 +3,24 @@
     <left-nav></left-nav>
     <router-view></router-view>
     <b-title title='有好货' cor='#6699CE' fTitle='全民口碑'></b-title>
+    <my-swiper>
+      <template #con>
+        <swiper-slide v-for="item in 6" :key="item">
+          <img :src="require(`@/images/swiper/swiper0${item}.jpg`)"/>
+          <p class="con">
+              同车同伴车载头枕腰靠一路行车，如果是不适相伴
+          </p>
+        </swiper-slide >
+      </template>
+    </my-swiper>
     <b-title title='猜你喜欢' cor='#F40' fTitle='个性推荐'></b-title>
     <my-swiper>
       <template #con>
         <swiper-slide v-for="item in 6" :key="item">
-            <img :src="require(`@/images/swiper/swiper0${item}.jpg`)"/>
-            <p class="con">
-              同车同伴车载头枕腰靠一路行车，如果是不适相伴
-            </p>
+          <img :src="require(`@/images/swiper/swiper0${item}.jpg`)"/>
+          <p class="con">
+            同车同伴车载头枕腰靠一路行车，如果是不适相伴
+          </p>
         </swiper-slide >
       </template>
     </my-swiper>
