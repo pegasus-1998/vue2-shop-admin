@@ -12,7 +12,8 @@ import { nanoid } from 'nanoid'
 import JwChat from 'jwchat'
 import _ from 'lodash'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/dist/css/swiper.css'
+// import 'swiper/dist/css/swiper.css'
+import 'swiper/src/swiper.scss'
 
 Vue.use(VueAwesomeSwiper) 
 Vue.use(JwChat)

@@ -11,7 +11,7 @@ function getHomeMockApi(path) {
 
 //获取主题市场有好货数据
 function getGoodShopApi() {
-    return getRequest(path)
+    return getRequest('/good/shop')
         .then(
             res => res,
             err => console.log('网络请求出错了')

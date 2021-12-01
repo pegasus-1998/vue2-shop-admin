@@ -17,11 +17,7 @@ export default {
     fTitle: {
         default: '默认值'
     }
-  },
-  data () {
-   return {}
-  },
-   methods:{}
+  }
 }
 </script>
 
