@@ -21,7 +21,7 @@
 
 ## 简介
 
-仿淘宝PC端(素材来自于淘宝)
+仿淘宝PC端(页面上的图片、内容等素材来自于淘宝网)
 
 vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-piczoom(放大镜) + jwchat(聊天组件)
 
