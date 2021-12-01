@@ -61,6 +61,12 @@ vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-pic
 
 > [fastmock](https://fastmock.site/#/) 简单好用的在线接口 MOCK 平台
 
+> [nanoid](https://github.com/ai/nanoid/) 字符串ID生成器
+
+> [vue-clock2](https://www.npmjs.com/package/vue-clock2) 时钟
+
+> [dayjs](https://dayjs.gitee.io/docs/zh-CN/installation/installation) 时间、日期处理
+
 :blush:除开上面项目中还用到其它的...等
 
 ## 步骤

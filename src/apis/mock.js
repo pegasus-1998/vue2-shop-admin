@@ -20,7 +20,7 @@ function getGoodShopApi() {
 
 //获取主题市场猜你喜欢数据
 function getGuessLikeApi() {
-    return getRequest()
+    return postRequest('/guess/like')
     .then(
         res => res,
         err => console.log('网络请求出错了')
