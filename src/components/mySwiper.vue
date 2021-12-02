@@ -21,7 +21,10 @@ export default {
                 spaceBetween: 30,
                 autoplay: true,
                 loop: true,
-                ...this.swOptions
+                autoplay : {
+                    delay:1200
+                },
+                ...this.swOptions,
             }
         }
     }

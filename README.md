@@ -84,4 +84,4 @@ npm run build  （打包）
 
 ## License
 
-[MIT](https://github.com/pegasus-1998/vue2-taobao)
+[MIT](https://github.com/pegasus-1998/vue2-taobao/blob/master/LICENSE)
