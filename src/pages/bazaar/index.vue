@@ -53,11 +53,13 @@ export default {
       this.guessLike = res
     },
     swHandler(flag) {
-      if(flag) {
-        this.$refs.mySwiper.$children[0].swiperInstance.autoplay.start()
-      }else {
-        this.$refs.mySwiper.$children[0].swiperInstance.autoplay.stop()
-      }
+      // if(flag) {
+      //   this.$refs.mySwiper.$children[0].swiperInstance.autoplay.start()
+      //   console.log('dd')
+      // }else {
+      //   this.$refs.mySwiper.$children[0].swiperInstance.autoplay.stop()
+      //   console.log('cc')
+      // }
     }
   }
 }
