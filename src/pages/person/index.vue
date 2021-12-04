@@ -15,7 +15,6 @@ import personNav from './components/nav.vue'
 import personAddress from '@/components/address'
 import favorite from '@/components/favorite'
 import logistics from '@/components/logistics'
-import purchased from './components/purchased.vue'
 import eva from './components/eva.vue'
 import wallet from '@/components/wallet'
 import calendar from './components/calendar.vue'
@@ -23,13 +22,12 @@ export default {
   components: { 
     VDistpicker, personHeader, personNav, 
     personAddress, favorite, logistics, 
-    purchased, eva, wallet, 
-    calendar 
+    eva, wallet, calendar 
   },
   data() {
     return {
       showComs: ['personAddress','favorite','logistics','wallet','eva','purchased'],
-      active: 1,
+      active: 0,
     }
   }
 };

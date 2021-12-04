@@ -1,5 +1,5 @@
 <template>
-    <swiper :options='options'>
+    <swiper :options='options' ref="swiper">
         <slot name="con"></slot>
     </swiper>
 </template>
@@ -14,6 +14,11 @@ export default {
             }
         }
     },
+    computed: {
+        swiper() {
+            return this.$refs.swiper.$swiper
+        }
+    },
     data() {
         return {
             options: {
@@ -22,7 +27,7 @@ export default {
                 autoplay: true,
                 loop: true,
                 autoplay : {
-                    delay:1200
+                    delay:1200,
                 },
                 ...this.swOptions,
             }

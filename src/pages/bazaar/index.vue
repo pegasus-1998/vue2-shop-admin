@@ -53,13 +53,11 @@ export default {
       this.guessLike = res
     },
     swHandler(flag) {
-      // if(flag) {
-      //   this.$refs.mySwiper.$children[0].swiperInstance.autoplay.start()
-      //   console.log('dd')
-      // }else {
-      //   this.$refs.mySwiper.$children[0].swiperInstance.autoplay.stop()
-      //   console.log('cc')
-      // }
+      if(flag) {
+        this.$refs.mySwiper.swiper.autoplay.start() 
+      }else {
+        this.$refs.mySwiper.swiper.autoplay.stop()
+      }
     }
   }
 }
@@ -79,11 +77,18 @@ export default {
         border-radius: 15px;
         object-fit: cover;
         border: 3px solid #ccc;
+        transition: all .5s;
       }
       .con {
         @include overflow-more(2);
         margin: 15px 0;
         text-indent: 1em;
+      }
+      &:hover {
+        color: red;
+        img {
+          transform: scale(1.1);
+        }
       }
     }
     .likes {
