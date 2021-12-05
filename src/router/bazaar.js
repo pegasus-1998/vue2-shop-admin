@@ -1,4 +1,5 @@
 const bazaar = () => import('@/pages/bazaar')
+const swiper = () => import('@/pages/swiper')
 
 const bazaarRouter = {
     path: '/bazaar',
@@ -7,7 +8,13 @@ const bazaarRouter = {
         title: '主题市场'
     },
     children: [
-        
+        {
+            path: 'swiper',
+            component: swiper,
+            meta: {
+                title: '主题市场- 轮播效果'
+            }
+        }
     ]
 }
 

@@ -3,8 +3,8 @@ const ztNavList = [
         icon: 'el-icon-edit',
         kinds: [
             {
-                text: '女装',
-                path: '',
+                text: '轮播效果',
+                path: '/bazaar/swiper',
             },
             {
                 text: '内衣',
