@@ -9,6 +9,10 @@ const bazaarRouter = {
     },
     children: [
         {
+            path: '',
+            component: swiper,
+        },
+        {
             path: 'swiper',
             component: swiper,
             meta: {

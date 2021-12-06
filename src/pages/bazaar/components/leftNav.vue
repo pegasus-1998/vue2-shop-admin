@@ -8,7 +8,8 @@
           <span v-if="sIndex !== 0">/</span>
           <router-link 
             :to="sItem.path" 
-            :key="sIndex">
+            :key="sIndex"
+            active-class="active">
             {{ sItem.text }}
           </router-link>
         </div>
@@ -31,6 +32,9 @@ export default {
 <style lang="scss" scoped>
   .left-nav {
     width: 212px;
+    .active {
+      color: $default-color;
+    }
     .title {
       text-align: center;
       letter-spacing: 2px;

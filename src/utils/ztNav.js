@@ -8,11 +8,11 @@ const ztNavList = [
             },
             {
                 text: '内衣',
-                path: '',
+                path: '/404',
             },
             {
                 text: '玩具',
-                path: ''
+                path: '/404'
             }
         ]
     },
@@ -21,11 +21,11 @@ const ztNavList = [
         kinds: [
             {
                 text: '男子',
-                path: ''
+                path: '/404'
             },
             {
                 text: '裤子',
-                path: ''
+                path: '/404'
             }
         ]
     }
