@@ -1,6 +1,7 @@
 <template>
   <div class="box">
-    <pic-zoom :url="url" :scale="2.5"></pic-zoom>
+     <!-- 这个放大镜插件中用了node-scss 导致很多人安装报错 所以用了新的放大镜插件vue2.0-zoom-->
+    <pic-zoom :url="url" :scale="2.5"></pic-zoom> 
   </div>
 </template>
 

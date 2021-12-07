@@ -1,7 +1,7 @@
 <template>
   <div class="details bx">
        <div>
-         <pic-zoom :url='url'></pic-zoom>
+         <img-zoom :src="url" width="320" height="320" :bigsrc="url" :configs="configs"></img-zoom>
          <img-arr ref="imgArr" @changeUrl='changeUrl'></img-arr>
        </div>
        <div class="right-con">
@@ -27,17 +27,25 @@
 </template>
 
 <script>
-import picZoom from './components/picZoom.vue'
+import imgZoom from 'vue2.0-zoom'
 import imgArr from './components/imgArr.vue'
 import { getHomeMockApi } from '@/apis/mock.js'
 import { mapMutations, mapState } from 'vuex'
 import createVuexAlong from "vuex-along";
 export default {
-  components: { picZoom, imgArr },
+  components: {  imgArr, imgZoom },
   data() {
     return {
       url: '',
       everyMessage: {},
+      configs: {
+        width:320,
+        height:320,
+        maskWidth:150,
+        maskHeight:150,
+        maskColor:'black',
+        maskOpacity:0.2
+      }
     }
   },
   computed: {
@@ -72,9 +80,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
   .details {
     display: flex;
     padding: 65px 0;
+    .rightImg {
+      left: 20px;
+    }
     .right-con {
       position: relative;
       margin-left: 25px;

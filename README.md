@@ -51,11 +51,13 @@ vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-pic
 
 > [vue-lazyload](https://github.com/hilongjw/vue-lazyload) vue图片懒加载
 
-> [vue-piczoom](https://www.npmjs.com/package/vue-piczoom/v/1.0.6) 基于vue2.x的电商图片放大镜插件。
+> [vue-piczoom](https://www.npmjs.com/package/vue-piczoom/v/1.0.6) 基于vue2.x的电商图片放大镜插件。注：采用了node-scss导致有些人安装失败，已弃用。
+
+> [vue2.0-zoom](https://github.com/jsonpeter/vue2.0-zoom) 基于vue的图片放大镜效果插件，代替vue-piczoom。
 
 > [jwchat](https://codegi.gitee.io/jwchatdoc/) 基于element-ui开发的聊天插件。
 
-> [Lodash](https://www.lodashjs.com/) 一致性、模块化、高性能的 JavaScript 实用工具库
+> [Lodash](https://www.lodashjs.com/) 一致性、模块化、高性能的 JavaScript 实用工具库。
 
 > [vue-awesome-swiper ](https://github.com/surmon-china/vue-awesome-swiper/tree/v3.1.3) vue中swiper轮播
 

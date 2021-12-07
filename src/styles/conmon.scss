@@ -16,7 +16,9 @@ $default-color: #f03726;
         clear: both;
     }
 }
-
+#_magnifier_layer {  // vue2.0-zoom 放大镜插件样式调整
+    transform: translateX(15px);
+}
 .el-input__inner:hover {
     border-color: $default-color;
 }
