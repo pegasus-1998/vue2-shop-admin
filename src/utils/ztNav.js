@@ -3,15 +3,15 @@ const ztNavList = [
         icon: 'el-icon-orange',
         kinds: [
             {
-                text: '双向轮播',
+                text: '轮播效果',
                 path: '/bazaar/swiper',
             },
             {
-                text: '轮播',
+                text: '其它',
                 path: '/404',
             },
             {
-                text: '轮播',
+                text: '其它',
                 path: '/404'
             }
         ]

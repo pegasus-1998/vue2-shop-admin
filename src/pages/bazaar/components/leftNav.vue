@@ -41,7 +41,7 @@ export default {
       color: $default-color;
     }
     .navs {
-      font-size: 15px;
+      font-size: 17px;
       .item {
         @include flexItem();
         margin: 10px 0;
