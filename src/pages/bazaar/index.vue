@@ -75,6 +75,7 @@ export default {
     display: flex;
     .rv {
       flex: 1;
+      height: 400px;
     }
   }
   .swiper-wrapper {

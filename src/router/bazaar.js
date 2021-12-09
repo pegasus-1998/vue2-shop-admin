@@ -10,7 +10,8 @@ const bazaarRouter = {
     children: [
         {
             path: '',
-            component: swiper,
+            // component: swiper,
+            redirect: '/bazaar/swiper'
         },
         {
             path: 'swiper',
