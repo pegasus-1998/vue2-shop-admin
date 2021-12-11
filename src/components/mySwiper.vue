@@ -26,8 +26,11 @@ export default {
                 spaceBetween: 30,
                 autoplay: true,
                 loop: true,
+                speed: 300,
                 autoplay : {
-                    delay:1200,
+                    delay: 1200,  
+    //                     stopOnLastSlide: false,
+    // disableOnInteraction: true,
                 },
                 ...this.swOptions,
             }

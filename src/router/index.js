@@ -18,12 +18,26 @@ const routes = [
       ...shopCarRouter,
       bazaarRouter,
       {
+        path: 'recr',
+        component: () => import('@/pages/recr'),
+        meta: {
+          title: '娱乐'
+        }
+      },
+      {
+        path: '/admin',
+        component: () => import('@/pages/admin'),
+        meta: {
+          title: '用户管理'
+        }
+      },
+      {
         path: '/person',
         component: () => import('@/pages/person'),
         meta: {
           title: '个人信息'
         }
-      },
+      }
     ]
   },
   {

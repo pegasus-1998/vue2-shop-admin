@@ -71,6 +71,14 @@ vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-pic
 
 :blush:除开上面项目中还用到其它的...等
 
+## VScode + Vue
+
+Vue2开发插件-- Vetur
+
+Vue3开发插件-- Vue Language Features (Volar)
+
+:blush注意：如果之前已经安装了Vetru(Vue2插件)。 要想Vue3中使用Volar，先禁用Vetur(必须禁用), 然后重启电脑。
+
 ## 步骤
 
 npm install  (安装依赖)
