@@ -73,6 +73,8 @@ vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-pic
 
 > [dayjs](https://dayjs.gitee.io/docs/zh-CN/installation/installation) 时间、日期处理
 
+> [echarts](https://echarts.apache.org/zh/index.html) 一个基于 JavaScript 的开源可视化图表库
+
 :blush:除开上面项目中还用到其它的...等
 
 ## VScode + Vue
