@@ -71,7 +71,7 @@ VueRouter.prototype.push = function push(location) {
 
 const router = new VueRouter({
   routes,
-  mode: 'hash'  //history
+  mode: 'history'  // hash  hash兼容性更好(虽然丑了点) history要跟后端沟通 正常下推荐使用hash
 })
 
 VueRouter.prototype.goBack = function () {

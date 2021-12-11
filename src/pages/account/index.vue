@@ -15,5 +15,6 @@ export default {
 <style lang="scss" scoped>
   .account {
     padding: 25px 0;
+    margin-top: -45px;
   }
 </style>

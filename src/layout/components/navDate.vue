@@ -34,6 +34,7 @@ export default {
   .nav-date {
     font-size: 16px;
     font-weight: 500;
+    padding-right: 15px;
     span {
       display: inline-block;
       letter-spacing: 2px;

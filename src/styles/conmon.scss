@@ -16,6 +16,11 @@ $default-color: #f03726;
         clear: both;
     }
 }
+.noneScrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
 #_magnifier_layer {  // vue2.0-zoom 放大镜插件样式调整
     transform: translateX(15px);
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="noneScrollbar">
      <router-view></router-view>
   </div>
 </template>
@@ -7,7 +7,8 @@
  <style lang="scss" scoped>
    #app {
       height: 100%;
-      overflow: scroll;
+      padding-top: 45px;
+      overflow: auto;
    }
  </style>
  
