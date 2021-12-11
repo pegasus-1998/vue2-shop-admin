@@ -77,7 +77,7 @@ Vue2开发插件-- Vetur
 
 Vue3开发插件-- Vue Language Features (Volar)
 
-:blush注意：如果之前已经安装了Vetru(Vue2插件)。 要想Vue3中使用Volar，先禁用Vetur(必须禁用), 然后重启电脑。
+:blush:注意：如果之前已经安装了Vetru(Vue2插件)。 要想Vue3中使用Volar，先禁用Vetur(必须禁用), 然后重启电脑。
 
 ## 步骤
 
