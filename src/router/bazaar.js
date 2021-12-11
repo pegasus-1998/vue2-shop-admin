@@ -1,5 +1,6 @@
 const bazaar = () => import('@/pages/bazaar')
 const swiper = () => import('@/pages/swiper')
+const echarts = () => import('@/pages/echarts')
 
 const bazaarRouter = {
     path: '/bazaar',
@@ -18,6 +19,13 @@ const bazaarRouter = {
             component: swiper,
             meta: {
                 title: '主题市场- 轮播效果'
+            }
+        },
+        {
+            path: 'echarts',
+            component: echarts,
+            meta: {
+                title: '主题市场- 图表库'
             }
         }
     ]

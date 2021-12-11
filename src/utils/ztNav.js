@@ -7,8 +7,8 @@ const ztNavList = [
                 path: '/bazaar/swiper',
             },
             {
-                text: '其它',
-                path: '/404',
+                text: '图表',
+                path: '/bazaar/echarts',
             },
             {
                 text: '其它',
