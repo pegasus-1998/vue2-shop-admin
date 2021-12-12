@@ -57,6 +57,6 @@ export default {
 <style scoped>
 .pieEcharts {
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 </style>

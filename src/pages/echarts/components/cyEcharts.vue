@@ -78,6 +78,6 @@ export default {
 <style  scoped>
     .cyEcharts {
         width: 100%;
-        height: 400px;
+        height: 350px;
     }
 </style>
