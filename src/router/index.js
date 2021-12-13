@@ -5,6 +5,7 @@ import homeRouter from './home'
 import seckillRouter from './seckill'
 import shopCarRouter from './shopCar'
 import bazaarRouter from './bazaar'
+import jsxRoute from './jsx'
 import store from '@/store'
 Vue.use(VueRouter)
 
@@ -17,6 +18,7 @@ const routes = [
       ...seckillRouter,
       ...shopCarRouter,
       bazaarRouter,
+      jsxRoute,
       {
         path: 'recr',
         component: () => import('@/pages/recr'),
