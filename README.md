@@ -93,7 +93,7 @@ npm run serve  (运行)
 
 npm run build  （打包）
 
-## Document
+## 链接
 
 - [github地址](https://github.com/pegasus-1998)
 - [天马导航-前端知识收集地址](http://pgs98.com)
