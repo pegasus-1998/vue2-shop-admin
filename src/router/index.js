@@ -39,6 +39,13 @@ const routes = [
         meta: {
           title: '个人信息'
         }
+      },
+      {
+        path: '/about',
+        component: () => import('@/pages/about'),
+        meta: {
+          title: '关于'
+        }
       }
     ]
   },

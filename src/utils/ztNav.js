@@ -3,7 +3,7 @@ const ztNavList = [
         icon: 'el-icon-orange',
         kinds: [
             {
-                text: '轮播效果',
+                text: '轮播',
                 path: '/bazaar/swiper',
             },
             {
@@ -11,8 +11,8 @@ const ztNavList = [
                 path: '/bazaar/echarts',
             },
             {
-                text: '其它',
-                path: '/404'
+                text: '富文本',
+                path: '/bazaar/editor'
             }
         ]
     },

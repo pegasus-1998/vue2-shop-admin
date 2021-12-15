@@ -1,6 +1,7 @@
 const bazaar = () => import('@/pages/bazaar')
 const swiper = () => import('@/pages/swiper')
 const echarts = () => import('@/pages/echarts')
+const editor = () => import('@/pages/editor')
 
 const bazaarRouter = {
     path: '/bazaar',
@@ -26,6 +27,13 @@ const bazaarRouter = {
             component: echarts,
             meta: {
                 title: '主题市场- 图表库'
+            }
+        },
+        {
+            path: 'editor',
+            component: editor,
+            meta: {
+                title: '主题市场- 富文本'
             }
         }
     ]

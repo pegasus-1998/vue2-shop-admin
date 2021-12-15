@@ -4,7 +4,7 @@ const jsxRoute = {
     path: '/jsx',
     component: jsx,
     meta: {
-        title: 'jsx系列'
+        title: '渲染函数 && jsx'
     }
 }
 
