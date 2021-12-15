@@ -87,11 +87,11 @@ Vue3开发插件-- Vue Language Features (Volar)
 
 ## 步骤
 
-npm install or yarn install (安装依赖)
+`npm install`  or  `yarn install`  -(安装依赖)
 
-npm run serve or yarn serve  (运行)
+`npm run serve`  or  `yarn serve`   -(运行)
 
-npm run build or yarn build （打包）
+`npm run build`  or  `yarn build`  -（打包）
 
 ## 链接
 
