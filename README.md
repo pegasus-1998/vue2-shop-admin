@@ -23,7 +23,7 @@
 
 仿淘宝PC端(页面上的图片、内容、链接等素材来自于淘宝网)
 
-vue2 + element-ui(组件库) + axios(http库) + dayjs(处理时间库) + vue-piczoom(放大镜) + jwchat(聊天组件)
+vue2 + element-ui(组件库 + 主题 + 按需引入) + axios(http库) + dayjs(处理时间库) + vue-piczoom(放大镜) + jwchat(聊天组件) + echarts(省份地图 + 中国地图)
 
 项目会不断更新优化。如果有要作者修改的地方，敬请提出你的宝贵建议，本人会及时更改。
 
