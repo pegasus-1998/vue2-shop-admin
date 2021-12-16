@@ -2,6 +2,7 @@ const bazaar = () => import('@/pages/bazaar')
 const swiper = () => import('@/pages/swiper')
 const echarts = () => import('@/pages/echarts')
 const editor = () => import('@/pages/editor')
+const transition = () => import('@/pages/transition')
 
 const bazaarRouter = {
     path: '/bazaar',
@@ -34,6 +35,13 @@ const bazaarRouter = {
             component: editor,
             meta: {
                 title: '主题市场- 富文本'
+            }
+        },
+        {
+            path: 'transition',
+            component: transition,
+            meta: {
+                title: '主题市场- 过渡'
             }
         }
     ]

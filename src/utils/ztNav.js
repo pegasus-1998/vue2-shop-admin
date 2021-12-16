@@ -20,8 +20,8 @@ const ztNavList = [
         icon: 'el-icon-share',
         kinds: [
             {
-                text: '常见动画效果',
-                path: '/404'
+                text: '过渡',
+                path: '/bazaar/transition'
             },
             {
                 text: '交互',

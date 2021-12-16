@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import fuJian from '@/libs/fuJian.js'
+import fuJian from '@/libs/map/fuJian.js'
 export default {
   data () {
    return {

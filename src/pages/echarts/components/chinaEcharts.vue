@@ -3,7 +3,7 @@
 </template>
 
 <script>
-require("@/libs/china.js");
+require("@/libs/map/china.js");
 export default {
   data() {
     return {
