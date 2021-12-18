@@ -22,10 +22,6 @@ const ztNavList = [
             {
                 text: '过渡',
                 path: '/bazaar/transition'
-            },
-            {
-                text: '交互',
-                path: '/404'
             }
         ]
     }

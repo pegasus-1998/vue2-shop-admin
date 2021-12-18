@@ -1,0 +1,23 @@
+.scroll-bar {
+    width: 300px;
+    height: 500px;
+    .el-menu {
+        border: none;
+        .el-submenu {
+            background: #ccc;
+            .el-menu-item {
+                font-size: 16px;
+                color: rgba(#000, .5);
+                padding-left: 55px !important;
+                background: #ccc;
+            }
+        }
+        .el-submenu__title, i {
+            font-size: 18px;
+            color: rgba(#000, .5);
+        }
+        .el-submenu__title:hover {
+            background: none;
+        }
+    }
+}

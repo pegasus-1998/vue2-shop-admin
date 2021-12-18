@@ -1,0 +1,19 @@
+ .jsx {
+    .el-breadcrumb {
+        font-size: 18px;
+        margin: 25px 0;
+        padding:  0 10px;
+        height: 40px;
+        line-height: 40px;
+        background: #ccc;
+        width: max-content;
+       .el-breadcrumb__inner {
+           color: rgba(#000, .5);
+           font-weight: 500;
+       }
+       .el-icon-arrow-right:before {
+           color: rgba(#000, .5);
+           font-weight: 500;
+       }
+    }
+ }

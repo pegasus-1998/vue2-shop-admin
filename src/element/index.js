@@ -32,7 +32,13 @@ import {
   Rate,
   Tag,
   Select,
-  Option
+  Option,
+  Breadcrumb,
+  BreadcrumbItem,
+  Icon,
+  Menu,
+  MenuItem,
+  Submenu,
 } from 'element-ui'
 
 Vue.use(Row)
@@ -65,6 +71,12 @@ Vue.use(Rate)
 Vue.use(Tag)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Icon)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(Submenu)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 

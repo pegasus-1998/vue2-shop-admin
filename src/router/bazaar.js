@@ -1,8 +1,8 @@
 const bazaar = () => import('@/pages/bazaar')
-const swiper = () => import('@/pages/swiper')
-const echarts = () => import('@/pages/echarts')
-const editor = () => import('@/pages/editor')
-const transition = () => import('@/pages/transition')
+const swiper = () => import('@/pages/bazaar/routes/swiper')
+const echarts = () => import('@/pages/bazaar/routes/echarts')
+const editor = () => import('@/pages/bazaar/routes/editor')
+const transition = () => import('@/pages/bazaar/routes/transition')
 
 const bazaarRouter = {
     path: '/bazaar',

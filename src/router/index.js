@@ -106,6 +106,6 @@ router.beforeEach((to,from,next) => {
   }
 })
 
-router.afterEach(to => document.title = to.meta.title || '淘宝网 - 淘！我喜欢')
+router.afterEach(to => document.title = to.meta.title || 'vue2-tem')
 
 export default router

@@ -42,7 +42,7 @@ export default {
   },
   data() {
     return {
-      componentName: 'zoomY',
+      componentName: 'fadeTransition',
       show: true,
       value: "fadeTransition",
       options: [
@@ -61,7 +61,6 @@ export default {
   },
   methods: {
       changeCom(val) {
-        this.show = true
         this.componentName = val
       }
   }
