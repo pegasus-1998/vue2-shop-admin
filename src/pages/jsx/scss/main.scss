@@ -1,0 +1,41 @@
+.main {
+    flex: 1;
+    padding: 0 55px;
+    color: #273849;
+    font-size: 18px;
+    h1,
+    h2, 
+    h3,
+    h4,
+    strong {
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 33px;
+        margin: 35px 0;
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+    }
+    h3 {
+        font-size: 21px;
+        margin: 20px 0;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        text-indent: 2em;
+        line-height: 25px;
+    }
+    pre {
+        height: 45px;
+        line-height: 45px;
+        background: #f8f8f8;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 25px;
+        span {
+            color: #42b983;
+        }
+    }
+}
