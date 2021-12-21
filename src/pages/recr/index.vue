@@ -1,19 +1,28 @@
 <template>
   <div class="recr bx">
-    娱乐页面
+    <h3>图片欣赏</h3>
+    <img-modules></img-modules>
   </div>
 </template>
-<script>
 
+<script>
+import imgModules from './components/imgModules.vue'
 export default {
-  data () {
-   return {}
-  },
-   methods:{}
+  components: { imgModules },
+  data() {
+    return {
+
+    }
+  }
 }
 </script>
+
 <style lang="scss" scoped>
     .recr {
-
+      h3 {
+        color: skyblue;
+        font-size: 21px;
+        letter-spacing: 2px;
+      }
     }
 </style>
