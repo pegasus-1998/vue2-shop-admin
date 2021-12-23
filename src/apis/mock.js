@@ -27,8 +27,27 @@ function getGuessLikeApi() {
     )
 }
 
+// 获取笑话接口
+function getXhApi() {
+    return getRequest('/message/xh')
+    .then(
+        res => res,
+        err => console.log('网络请求出错了')
+    )
+}
+
+// 获取视频接口
+function getVideoApi() {
+    return postRequest('/message/video')
+    .then(
+        res => res,
+        err => console.log('网络请求出错了')
+    )
+}
 export {
     getHomeMockApi,
     getGoodShopApi,
-    getGuessLikeApi
+    getGuessLikeApi,
+    getXhApi,
+    getVideoApi
 }

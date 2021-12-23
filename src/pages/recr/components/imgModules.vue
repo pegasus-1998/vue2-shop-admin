@@ -25,8 +25,12 @@ export default {
 <style lang="scss" scoped>
     .img-modules {
        @include spaceBetween();
-        img {
-            width: 350px;
+        li {
+            margin-bottom: 15px;
+            img {
+                cursor: pointer;
+                width: 380px;
+            }
         }
     }
 </style>
