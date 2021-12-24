@@ -16,6 +16,12 @@ export default {
   components: { layoutHeader, layoutBottom },
 }
 </script>
+
+<style lang='scss' scoped>
+  .layout {
+    padding-top: 45px;
+  }
+</style>
  
 
  

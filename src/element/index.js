@@ -38,7 +38,10 @@ import {
   Icon,
   Menu,
   MenuItem,
+  MenuItemGroup,
   Submenu,
+  RadioGroup,
+  RadioButton
 } from 'element-ui'
 
 Vue.use(Row)
@@ -77,6 +80,9 @@ Vue.use(Icon)
 Vue.use(Menu)
 Vue.use(MenuItem)
 Vue.use(Submenu)
+Vue.use(RadioGroup)
+Vue.use(RadioButton)
+Vue.use(MenuItemGroup)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 

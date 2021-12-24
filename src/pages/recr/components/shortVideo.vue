@@ -33,7 +33,7 @@ export default {
             src: "http://pgs98.com/gog/m1.mp4", // url地址
           },
         ],
-        poster: require('@/images/swiper/swiper02.jpg'), // 封面地址
+        poster: require('@/images/swiper/swiper01.jpg'), // 封面地址
         notSupportedMessage: "此视频暂无法播放，请稍后再试", // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
         controlBar: {
           timeDivider: true, // 当前时间和持续时间的分隔符
@@ -63,7 +63,7 @@ export default {
         if(this.nowIndex < this.srcArrs.length - 1) {
           this.nowIndex++
           this.playerOptions['sources'][0]['src'] = this.srcArrs[this.nowIndex].src
-           this.playerOptions['poster'] = require(`@/images/swiper/swiper0${this.nowIndex + 1}.jpg`)
+          this.playerOptions['poster'] = require(`@/images/swiper/swiper0${this.nowIndex + 1}.jpg`)
         }
       }
     }

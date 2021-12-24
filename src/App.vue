@@ -7,7 +7,6 @@
  <style lang="scss" scoped>
    #app {
       height: 100%;
-      padding-top: 45px;
       overflow: auto;
    }
  </style>

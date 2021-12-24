@@ -27,13 +27,6 @@ const routes = [
         }
       },
       {
-        path: '/admin',
-        component: () => import('@/pages/admin'),
-        meta: {
-          title: '用户管理'
-        }
-      },
-      {
         path: '/person',
         component: () => import('@/pages/person'),
         meta: {
@@ -41,7 +34,7 @@ const routes = [
         }
       },
       {
-        path: '/about',
+        path: 'about',
         component: () => import('@/pages/about'),
         meta: {
           title: '关于'
@@ -54,6 +47,13 @@ const routes = [
     component: () => import('@/pages/account'),
     meta: {
       title: '账号'
+    }
+  },
+  {
+    path: '/admin',
+    component: () => import('@/pages/admin'),
+    meta: {
+      title: '用户管理'
     }
   },
   {
@@ -94,20 +94,20 @@ VueRouter.prototype.goBack = function () {
   this.go(-1)
 }
 
-router.beforeEach((to,from,next) => {
-  if(to.path !== '/person') {
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/person') {
     next()
-  }else {
+  } else {
     const users = store.state.userModule.users
     const token = store.state.userModule.token
     const flag = users.some(item => item.token === token)
-    if(!flag) {
+    if (!flag) {
       next('/account')
       Vue.prototype.$message({
         type: 'error',
         message: '请先登录！'
       })
-    }else {
+    } else {
       next()
     }
   }
