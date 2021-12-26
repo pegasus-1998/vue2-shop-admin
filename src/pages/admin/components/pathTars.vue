@@ -1,6 +1,6 @@
 <template>
   <div class="path-tars">
-      
+      <el-tag type='success' closable>表桥</el-tag>
   </div>
 </template>
 

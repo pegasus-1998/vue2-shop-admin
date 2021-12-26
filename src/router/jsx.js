@@ -1,6 +1,6 @@
 const jsx = () => import('@/pages/jsx')
 
-const jsxRoute = {
+const jsxRouter = {
     path: '/jsx',
     component: jsx,
     meta: {
@@ -8,4 +8,4 @@ const jsxRoute = {
     }
 }
 
-export default jsxRoute
+export default jsxRouter

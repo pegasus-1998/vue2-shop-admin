@@ -5,7 +5,8 @@ import homeRouter from './home'
 import seckillRouter from './seckill'
 import shopCarRouter from './shopCar'
 import bazaarRouter from './bazaar'
-import jsxRoute from './jsx'
+import jsxRouter from './jsx'
+import adminRouter from './admin'
 import store from '@/store'
 Vue.use(VueRouter)
 
@@ -18,7 +19,7 @@ const routes = [
       ...seckillRouter,
       ...shopCarRouter,
       bazaarRouter,
-      jsxRoute,
+      jsxRouter,
       {
         path: 'recr',
         component: () => import('@/pages/recr'),
@@ -42,18 +43,12 @@ const routes = [
       }
     ]
   },
+  adminRouter,
   {
     path: '/account',
     component: () => import('@/pages/account'),
     meta: {
       title: '账号'
-    }
-  },
-  {
-    path: '/admin',
-    component: () => import('@/pages/admin'),
-    meta: {
-      title: '用户管理'
     }
   },
   {
@@ -113,6 +108,6 @@ router.beforeEach((to, from, next) => {
   }
 })
 
-router.afterEach(to => document.title = to.meta.title || 'vue2-tem')
+router.afterEach(to => document.title = to.meta.title || 'vue2-whole')
 
 export default router

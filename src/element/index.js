@@ -41,7 +41,7 @@ import {
   MenuItemGroup,
   Submenu,
   RadioGroup,
-  RadioButton
+  RadioButton,
 } from 'element-ui'
 
 Vue.use(Row)

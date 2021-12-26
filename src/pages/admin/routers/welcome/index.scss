@@ -1,0 +1,165 @@
+.welcome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    padding-top: 260px;
+    .sp {
+        color: #000;
+        font-size: 23px;
+        font-weight: 700;
+        letter-spacing: 5px;
+      }
+    .monster {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #000;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        animation: jumpAnimation 1s infinite alternate;
+         .eye {
+            width: 40%;
+            height: 40%;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .eyeBall {
+                width: 50%;
+                height: 50%;
+                border-radius: 50%;
+                background-color: black;
+                animation: eyeAnimation 1.6s infinite alternate;
+            }
+        }
+        .mouth {
+            width: 32%;
+            height: 10px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 20%;
+            height: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            top: -10px;
+            left: 50%;
+        }
+        &::before {
+            transform: translateX(-70%) rotate(45deg);
+        }
+        &::after {
+            transform: translateX(-30%) rotate(-45deg);
+        }
+    }
+    .ani1 {
+        background: rgb(207, 167, 152);
+        .eye {
+            .eyeBall {
+                background: rgb(207, 167, 152);
+            }  
+        }
+        &::before,
+        &::after {
+            background: rgb(207, 167, 152);
+        }
+    }
+    .ani2 {
+        background: #d62721;
+        animation: jumpAnimation 1s infinite alternate .3s;
+        .eye {
+            .eyeBall {
+                background-color: #d62721;
+            }  
+        }
+        &::before,
+        &::after {
+            background: #d62721;
+        }
+    }
+    .ani3 {
+        background: rgb(28, 124, 28);
+        animation: jumpAnimation 1s infinite alternate .6s;
+        .eye {
+            .eyeBall {
+                background-color: rgb(28, 124, 28) ;
+            }  
+        }
+        &::before,
+        &::after {
+            background: rgb(28, 124, 28);
+        }
+    }
+    .ani4 {
+        background: purple;
+        animation: jumpAnimation 1s infinite alternate .9s;
+        .eye {
+            .eyeBall {
+                background-color: purple;
+            }  
+        }
+        &::before,
+        &::after {
+            background: purple;
+        }
+    }
+    .ani5 {
+        background: rgb(196, 138, 148);
+        animation: jumpAnimation 1s infinite alternate 1.2s;
+        .eye {
+            .eyeBall {
+                background-color: rgb(196, 138, 148);
+            }  
+        }
+        &::before,
+        &::after {
+            background: rgb(196, 138, 148);
+        }
+    }
+    .ani6 {
+        background: rgb(26, 26, 180);
+        animation: jumpAnimation 1s infinite alternate 1.5s;
+        .eye {
+            .eyeBall {
+                background-color: rgb(26, 26, 180);
+            }  
+        }
+        &::before,
+        &::after {
+            background: rgb(26, 26, 180);
+        }
+    }
+}
+@keyframes eyeAnimation {
+    0%,
+    10% {
+        transform: translate(50%);
+    }
+    90%,
+    100% {
+        transform: translate(-50%);
+    }
+}
+@keyframes jumpAnimation {
+    50% {
+        top: 0px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        top: -50px;
+        box-shadow: 0 120px 20px rgba(0, 0, 0, 0.3);
+    }
+}

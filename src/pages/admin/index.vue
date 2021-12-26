@@ -4,6 +4,7 @@
     <div class="main-container">
       <main-header :isCollapse.sync='isCollapse'></main-header>
       <path-tars></path-tars>
+      <router-view></router-view>
     </div>
   </div>
 </template>

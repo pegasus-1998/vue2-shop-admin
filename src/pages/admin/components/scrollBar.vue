@@ -1,16 +1,17 @@
 <template>
   <el-menu
-    default-active="1-4-1"
     class="el-menu-vertical-demo"
     :collapse="isCollapse"
+    router
+    unique-opened
+    :default-active="$route.path"
   >
     <el-submenu index="1">
       <template slot="title">
         <i class="el-icon-menu"></i>
-        <span slot="title">主页</span>
+        <span slot="title">HOME</span>
       </template>
-      <el-menu-item index="1-1">选项1</el-menu-item>
-      <el-menu-item index="1-2">选项2</el-menu-item>
+      <el-menu-item index="/admin/welcome">welcome</el-menu-item>
     </el-submenu>
   </el-menu>
 </template>
