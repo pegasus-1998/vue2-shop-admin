@@ -28,7 +28,7 @@ export default {
     ...mapMutations('userModule',{CLEAR_TOKEN: 'CLEAR_TOKEN'}),
     outLogin() {
       this.CLEAR_TOKEN()
-      this.$router.replace("/account");
+      this.$router.replace("/login");
       this.$message({
         type: "success",
         message: "退出成功",

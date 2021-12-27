@@ -45,10 +45,10 @@ const routes = [
   },
   adminRouter,
   {
-    path: '/account',
-    component: () => import('@/pages/account'),
+    path: '/login',
+    component: () => import('@/pages/login'),
     meta: {
-      title: '账号'
+      title: '登录 - 注册'
     }
   },
   {
@@ -97,7 +97,7 @@ router.beforeEach((to, from, next) => {
     const token = store.state.userModule.token
     const flag = users.some(item => item.token === token)
     if (!flag) {
-      next('/account')
+      next('/login')
       Vue.prototype.$message({
         type: 'error',
         message: '请先登录！'
