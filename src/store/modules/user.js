@@ -7,11 +7,13 @@ const userModule = {
         addressIdx: 0,   //修改哪一个收货地址
         users: [         //保存着所有的用户
             {
+                id: 10086,
                 userName: 'admin',
                 password: 123456,
                 ps: '生活不仅眼前的苟且，还有诗和远方！',    //个性签名 
-                headPicture: require("@/images/tx.jpg"),    //头像
+                headPicture: require("@/images/ava/ava01.png"),    //头像
                 token: '12345678910',
+                aut: false, // 是否具有权限
                 address: [          //所有的收获地址
                     {
                         key: 100,

@@ -42,6 +42,8 @@ import {
   Submenu,
   RadioGroup,
   RadioButton,
+  Table,
+  TableColumn,
 } from 'element-ui'
 
 Vue.use(Row)
@@ -83,6 +85,8 @@ Vue.use(Submenu)
 Vue.use(RadioGroup)
 Vue.use(RadioButton)
 Vue.use(MenuItemGroup)
+Vue.use(Table)
+Vue.use(TableColumn)
 Vue.prototype.$message = Message
 Vue.prototype.$alert = MessageBox
 

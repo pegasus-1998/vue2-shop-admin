@@ -13,6 +13,13 @@
       </template>
       <el-menu-item index="/admin/welcome">welcome</el-menu-item>
     </el-submenu>
+    <el-submenu index="2">
+      <template slot="title">
+        <i class="el-icon-s-custom"></i>
+        <span slot="title">USER</span>
+      </template>
+      <el-menu-item index="/admin/message">message</el-menu-item>
+    </el-submenu>
   </el-menu>
 </template>
 

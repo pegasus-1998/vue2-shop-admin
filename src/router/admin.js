@@ -14,6 +14,13 @@ const adminRouter = {
             meta: {
                 title: 'admin - welcome'
             }
+        },
+        {
+            path: 'message',
+            component: () => import('@/pages/admin/routers/message'),
+            meta: {
+                title: 'admin - message'
+            }
         }
     ]
 }
