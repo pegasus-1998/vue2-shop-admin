@@ -12,9 +12,6 @@
       <div class="mouth"></div>
     </div>
     <span class="sp">欢迎啊......亲！</span>
-    <div>
-      <el-button type="primary" @click="$router.push('/home')">首页</el-button>
-    </div>
   </div>
 </template>
 

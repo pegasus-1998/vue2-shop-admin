@@ -62,6 +62,14 @@ const userModule = {
                 interchangeArray(users[userIdx].address, 0, addressIdx)
             }
             Object.assign(users[userIdx].address[addressIdx], obj)
+        },
+        SET_AUT({users}, id) {  // 修改用户权限
+            users.some(item => {
+                if(item.id == id) {
+                    item.aut = !item.aut
+                    return true
+                }
+            })
         }
     }
 }

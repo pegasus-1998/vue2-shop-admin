@@ -12,14 +12,16 @@ const adminRouter = {
             path: 'welcome',
             component: () => import('@/pages/admin/routers/welcome'),
             meta: {
-                title: 'admin - welcome'
+                title: 'admin - welcome',
+                bread: ['admin', 'home', 'welcome']
             }
         },
         {
             path: 'message',
             component: () => import('@/pages/admin/routers/message'),
             meta: {
-                title: 'admin - message'
+                title: 'admin - message',
+                bread: ['admin', 'user', 'message']
             }
         }
     ]

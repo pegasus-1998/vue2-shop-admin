@@ -7,18 +7,24 @@
     :default-active="$route.path"
   >
     <el-submenu index="1">
-      <template slot="title">
-        <i class="el-icon-menu"></i>
-        <span slot="title">HOME</span>
+      <template #title>
+        <i class="el-icon-orange"></i>
+        <span>home</span>
       </template>
       <el-menu-item index="/admin/welcome">welcome</el-menu-item>
     </el-submenu>
     <el-submenu index="2">
-      <template slot="title">
+      <template #title>
         <i class="el-icon-s-custom"></i>
-        <span slot="title">USER</span>
+        <span>user</span>
       </template>
       <el-menu-item index="/admin/message">message</el-menu-item>
+    </el-submenu>
+    <el-submenu index='3'>
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>组件</span>
+      </template>
     </el-submenu>
   </el-menu>
 </template>
