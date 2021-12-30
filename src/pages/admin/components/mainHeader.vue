@@ -12,7 +12,12 @@
         </el-breadcrumb-item>
       </el-breadcrumb>
     </div>
-    <el-button type="primary" @click="$router.push('/home')">退出</el-button>
+    <div class="right-con">
+      <a href="https://github.com/pegasus-1998/vue2-whole" target="black">
+        <img src="@/images/github.png"/>
+      </a>
+      <el-button type="primary" @click="$router.push('/home')">退出</el-button>
+    </div>
   </div>
 </template>
 
@@ -62,6 +67,13 @@ export default {
         font-size: 18px;
         font-weight: 600;
       }
+    }
+  }
+  .right-con {
+    img {
+      width: 48px;
+      margin-top: -2px;
+      margin-right: 15px;
     }
   }
 }

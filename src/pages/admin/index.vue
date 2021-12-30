@@ -26,6 +26,7 @@ export default {
 .admin {
   display: flex;
   height: 100%;
+  user-select: none;
   .main-container {
     flex: 1;
     padding: 25px;

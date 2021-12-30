@@ -11,12 +11,10 @@
 
 <style lang='scss' scoped>
     .pg404 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 55px;
+        @include hvCenter();
+        height: 100%;
         .left-img {
-            width: 330px;
+            width: 480px;
             margin-right: 35px;
         }
         .right-con {

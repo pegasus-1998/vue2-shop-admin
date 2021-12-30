@@ -27,5 +27,34 @@ const ztNavList = [
     }
 ]
 
+const bars = [
+    {
+        index: '1',
+        icon: 'el-icon-orange',
+        text: 'home',
+        childrens: ['welcome']
+    },
+    {
+        index: '2',
+        icon: 'el-icon-s-custom',
+        text: 'user',
+        childrens: ['message']
+    },
+    {
+        index: '3',
+        icon: 'el-icon-menu',
+        text: '组件',
+        childrens: []
+    },
+    {
+        index: '4',
+        icon: 'el-icon-warning',
+        text: 'error',
+        childrens: ['401','404']
+    }
+]
 
-export default ztNavList
+export {
+    bars,
+    ztNavList
+}

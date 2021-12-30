@@ -6,32 +6,30 @@
     unique-opened
     :default-active="$route.path"
   >
-    <el-submenu index="1">
+    <el-submenu :index="item.index" v-for="item in bars" :key="item.index">
       <template #title>
-        <i class="el-icon-orange"></i>
-        <span>home</span>
+        <i :class="item.icon"></i>
+        <span>{{item.text}}</span>
       </template>
-      <el-menu-item index="/admin/welcome">welcome</el-menu-item>
-    </el-submenu>
-    <el-submenu index="2">
-      <template #title>
-        <i class="el-icon-s-custom"></i>
-        <span>user</span>
-      </template>
-      <el-menu-item index="/admin/message">message</el-menu-item>
-    </el-submenu>
-    <el-submenu index='3'>
-      <template slot="title">
-        <i class="el-icon-menu"></i>
-        <span>组件</span>
-      </template>
+      <el-menu-item 
+        v-for="mItem in item.childrens" 
+        :index="mItem"
+        :key='mItem'
+        >{{mItem}}
+      </el-menu-item>
     </el-submenu>
   </el-menu>
 </template>
 
 <script>
+import { bars } from '@/utils/mes.js'
 export default {
   props: ["isCollapse"],
+  data() {
+    return {
+      bars
+    }
+  }
 };
 </script>
 

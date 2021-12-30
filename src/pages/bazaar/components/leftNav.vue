@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ztNavList from '@/utils/ztNav.js'
+import { ztNavList } from '@/utils/mes.js'
 export default {
   data () {
    return {
