@@ -23,6 +23,22 @@ const adminRouter = {
                 title: 'admin - message',
                 bread: ['admin', 'user', 'message']
             }
+        },
+        {
+            path: '401',
+            component: () => import('@/pages/error/401.vue'),
+            meta: {
+                title: 'admin - 401',
+                bread: ['admin', 'error', '404']
+            }
+        },
+        {
+            path: '404',
+            component: () => import('@/pages/error/404.vue'),
+            meta: {
+                title: 'admin - 404',
+                bread: ['admin', 'error', '404']
+            }
         }
     ]
 }

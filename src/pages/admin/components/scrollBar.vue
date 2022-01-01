@@ -4,7 +4,7 @@
     :collapse="isCollapse"
     router
     unique-opened
-    :default-active="$route.path"
+    :default-active="path"
   >
     <el-submenu :index="item.index" v-for="item in bars" :key="item.index">
       <template #title>
@@ -28,6 +28,11 @@ export default {
   data() {
     return {
       bars
+    }
+  },
+  computed: {
+    path() {
+      return this.$route.path.split('/')[2]
     }
   }
 };
