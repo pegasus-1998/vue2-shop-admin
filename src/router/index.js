@@ -108,6 +108,6 @@ router.beforeEach((to, from, next) => {
   }
 })
 
-router.afterEach(to => document.title = to.meta.title || 'vue2-whole')
+router.afterEach(to => document.title = to.meta.title || 'vue2-shop-admin')
 
 export default router

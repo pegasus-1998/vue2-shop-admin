@@ -49,7 +49,6 @@ export default {
 </script>
 <style lang="scss" scoped>
   .search-nav {
-    margin: 30px auto;
     display: flex;
     align-items: center;
   }

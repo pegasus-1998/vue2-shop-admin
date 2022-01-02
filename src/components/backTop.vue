@@ -1,11 +1,11 @@
 <template>
   　<el-backtop
-        target="#app"
-        :right="120"
-        :bottom="100"
+        target="#main"
+        :right="150"
+        :bottom="300"
         :visibility-height="40"
     >
-    　　　　<i class="el-icon-top"></i> 　　
+    　　　<i class="el-icon-top"></i> 　　
     </el-backtop>
 </template>
 

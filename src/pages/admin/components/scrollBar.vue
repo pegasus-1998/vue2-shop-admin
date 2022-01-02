@@ -5,6 +5,7 @@
     router
     unique-opened
     :default-active="path"
+    active-text-color='orange'
   >
     <el-submenu :index="item.index" v-for="item in bars" :key="item.index">
       <template #title>

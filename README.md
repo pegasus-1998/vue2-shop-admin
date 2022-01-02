@@ -21,7 +21,7 @@
 
 ## 简介
 
-vue2-whole(页面上的图片、内容、链接等素材来自于淘宝网)
+vue2-shop-admin(页面上的图片、内容、链接等素材来自于淘宝网)
 
 vue2 + element-ui(组件库 + 主题 + 按需引入) + axios(http库) + dayjs(处理时间库) + jwchat + echarts...
 
@@ -100,4 +100,4 @@ Vue3开发插件-- Vue Language Features (Volar)
 
 ## License
 
-[MIT](https://github.com/pegasus-1998/vue2-whole/blob/master/LICENSE)
+[MIT](https://github.com/pegasus-1998/vue2-shop-admin/blob/master/LICENSE)

@@ -1,7 +1,6 @@
 <template>
   <div class="home bx">
     <search-nav></search-nav>
-    <price-scope></price-scope>
     <con-list :pageObj='pageObj' @changeNum='changeNum'></con-list>
     <el-pagination
       v-show="0 < num"
@@ -14,17 +13,14 @@
       :total="num">
     </el-pagination>
     <loading v-show="!num "/>
-    <want-find></want-find>
   </div>
 </template>
 <script>
 import searchNav from "./components/searchNav.vue";
-import priceScope from "./components/priceScope.vue";
 import conList from "./components/conList.vue";
-import wantFind from './components/wantFind.vue'
 export default {
   name: 'home',
-  components: { searchNav, priceScope, conList, wantFind },
+  components: { searchNav, conList },
   data() {
     return {
       num: 0,
