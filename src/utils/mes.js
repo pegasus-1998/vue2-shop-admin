@@ -51,6 +51,18 @@ const bars = [
         icon: 'el-icon-warning',
         text: 'error',
         childrens: ['401','404']
+    },
+    {
+        index: '5',
+        icon: 'el-icon-s-operation',
+        text: 'jsx',
+        childrens: []
+    },
+    {
+        index: '6',
+        icon: 'el-icon-s-order',
+        text: 'excel',
+        childrens: []
     }
 ]
 

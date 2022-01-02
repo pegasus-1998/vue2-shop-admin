@@ -17,7 +17,7 @@
     </el-input>
     <div class="btns">
         <el-button type="primary" @click="login">登录</el-button>
-        <el-button type="primary" @click="login">首页</el-button>
+        <el-button type="primary" @click="$router.back()">返回</el-button>
     </div>
     <div class="bottom">
       <span>账号：admin</span>

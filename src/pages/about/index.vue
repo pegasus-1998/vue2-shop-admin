@@ -3,7 +3,7 @@
     <div class="header">
       <img class="vue-logo" src="https://cn.vuejs.org/images/logo.svg" />
       <div>
-        <p>vue2-whole(页面上的图片、内容、链接等素材来自于淘宝网)</p>
+        <p>vue2-shop-admin(页面上的图片、内容、链接等素材来自于淘宝网)</p>
         <p>
           项目会不断更新优化。如果有要作者修改的地方，敬请提出你的宝贵建议，本人会及时更改。
         </p>

@@ -17,11 +17,19 @@
     overflow: hidden;
 }
 
-//绝对剧中
+//绝对居中
 @mixin center {
     position: absolute;
     left:50%;
     top:50%;
+    transform: translate(-50%, -50%);
+}
+
+// 固定居中
+@mixin fixCen {
+    position: fixed;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
