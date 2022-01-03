@@ -26,7 +26,6 @@ const ztNavList = [
         ]
     }
 ]
-
 const bars = [
     {
         index: '1',
@@ -65,7 +64,6 @@ const bars = [
         childrens: []
     }
 ]
-
 export {
     bars,
     ztNavList

@@ -1,5 +1,4 @@
-import Vue from 'vue'
-const vm = new Vue()
+import vm from '@/main.js'
 const shopCarModule = {
     namespaced: true,
     state: {

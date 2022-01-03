@@ -5,7 +5,7 @@
         <el-tab-pane label="登录" name="sonLogin">
           <son-login></son-login>
         </el-tab-pane>
-        <el-tab-pane label="注册" name="second">
+        <el-tab-pane label="注册" name="sonRegister">
           <son-register></son-register>
         </el-tab-pane>
         <el-tab-pane label="其它登录" name="three">
@@ -33,6 +33,7 @@ export default {
 .login {
   width: 100%;
   height: 100%;
+  user-select: none;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

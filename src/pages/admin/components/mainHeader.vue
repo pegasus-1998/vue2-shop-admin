@@ -16,7 +16,7 @@
       <a href="https://github.com/pegasus-1998/vue2-whole" target="black">
         <img src="@/images/github.png"/>
       </a>
-      <el-button type="primary" @click="$router.back()">返回</el-button>
+      <el-button type="primary" @click="$router.push('/home')">首页</el-button>
     </div>
   </div>
 </template>

@@ -43,8 +43,10 @@ Vue.config.productionTip = false
 Vue.prototype._ = _
 Vue.prototype.$echarts = echarts
 
-new Vue({
+const vm = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+export default vm

@@ -1,4 +1,6 @@
 import { interchangeArray } from '@/utils/arrayChange.js'
+import vm from '@/main.js'
+import { packMes } from '@/utils/pack.js'
 const userModule = {
     namespaced: true,
     state: {
@@ -70,6 +72,26 @@ const userModule = {
                     return true
                 }
             })
+        },
+        REGISTER_USER({users}, obj) { // 注册账号
+            for(let i = 0; i < users.length; i++) {
+                if(users[i].userName == obj.account) {
+                    packMes('warning', '此账号已经存在！')
+                    return false
+                }
+            }
+            users.push({
+                id: users[users.length - 1].id + 1,
+                userName: obj.account,
+                password: obj.password,
+                ps: '',
+                headPicture: obj.imgSrc,
+                token: vm.$nanoid(),
+                aut: false,
+                address: []
+            })
+            packMes('success', '注册成功，快去登陆吧')
+            return true
         }
     }
 }
