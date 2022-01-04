@@ -56,9 +56,7 @@ export default {
     regEvent() {
       this.$refs.regFormRef.validate(flag => {
         if(!flag) return
-        if(this.REGISTER_USER(this.regForm)) {
-          
-        }
+        this.REGISTER_USER(this.regForm)
       })
     }
   }

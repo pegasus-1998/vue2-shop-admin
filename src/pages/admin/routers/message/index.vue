@@ -8,13 +8,12 @@
             <img :src="scope.row.headPicture"/>
         </template>
     </el-table-column>
-    <el-table-column label="token" prop="token" width="180"></el-table-column>
+    <el-table-column label="个性签名" prop="ps"></el-table-column>
     <el-table-column label="权限" width="120">
         <template #default='scope'>
             <el-switch :value="scope.row.aut" @change='change($event, scope.row.id)'></el-switch>
         </template>
     </el-table-column>
-    <el-table-column label="个性签名" prop="ps"></el-table-column>
     <el-table-column label="操作">
         <template #default='scope'>
             <el-button type="primary" @click="removeUser(scope.row.id)">删除</el-button>

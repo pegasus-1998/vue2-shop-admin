@@ -42,30 +42,9 @@ export default {
     ...mapState("userModule", ["users", "token", "userIdx"]),
   },
   methods: {
-    ...mapMutations("userModule", {
-      SET_USERS_INDEX: "SET_USERS_INDEX",
-      SET_TOKEN: "SET_TOKEN",
-    }),
+    ...mapMutations("userModule", { LOGIN_USER: 'LOGIN_USER'}),
     login() {
-      this.users.some((item, index) => {
-        if (
-          item.userName === this.loginObj.account &&
-          item.password === this.loginObj.password
-        ) {
-          this.$message({
-            type: "success",
-            message: "登录成功",
-          });
-          this.SET_USERS_INDEX(index);
-          this.SET_TOKEN(item.token);
-          this.$router.replace("/person");
-        } else {
-          this.$message({
-            type: "warning",
-            message: "账号密码不正确",
-          })
-        }
-      })
+      this.LOGIN_USER(this.loginObj)
     }
   }
 }

@@ -14,7 +14,7 @@ const userModule = {
                 password: 123456,
                 ps: '生活不仅眼前的苟且，还有诗和远方！',    //个性签名 
                 headPicture: require("@/images/ava/ava01.png"),    //头像
-                token: '12345678910',
+                token: '',  // 登录的时候获取
                 aut: false, // 是否具有权限
                 address: [          //所有的收获地址
                     {
@@ -47,12 +47,6 @@ const userModule = {
         }
     },
     mutations: {
-        SET_USERS_INDEX(state, idx) {
-            state.userIdx = idx
-        },
-        SET_TOKEN(state, token) {
-            state.token = token
-        },
         CLEAR_TOKEN(state) {
             state.token = ''
         },
@@ -86,12 +80,26 @@ const userModule = {
                 password: obj.password,
                 ps: '',
                 headPicture: obj.imgSrc,
-                token: vm.$nanoid(),
+                // token: vm.$nanoid(),
                 aut: false,
                 address: []
             })
             packMes('success', '注册成功，快去登陆吧')
             return true
+        },
+        LOGIN_USER({users}, {account, password}) {  // 用户登录
+           const userObj = users.find(item => {
+                const { userName, password: p1 } = item
+                return  userName == account && p1 == password
+            })
+            if(userObj) {
+                const token = vm.$nanoid()
+                userObj.token = token
+                this.state.userModule.token = token
+                packMes('success', '登录成功')
+            }else {
+                packMes('warning', '账号密码错误')
+            }
         }
     }
 }
