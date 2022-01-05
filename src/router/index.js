@@ -24,14 +24,16 @@ const routes = [
         path: 'recr',
         component: () => import('@/pages/recr'),
         meta: {
-          title: '娱乐'
+          title: '娱乐',
+          isNeedLogin: true
         }
       },
       {
         path: '/person',
         component: () => import('@/pages/person'),
         meta: {
-          title: '个人信息'
+          title: '个人信息',
+          isNeedLogin: true
         }
       },
       {
@@ -90,19 +92,18 @@ VueRouter.prototype.goBack = function () {
 }
 
 router.beforeEach((to, from, next) => {
-  if (to.path !== '/person') {
+  if (!to.meta.isNeedLogin) {
     next()
   } else {
-    const users = store.state.userModule.users
-    const token = store.state.userModule.token
-    const flag = users.some(item => item.token === token)
-    if (!flag) {
+    const token = sessionStorage.getItem('token')
+    const userToken = store.state.userModule.token
+    if(!token || !userToken || token != userToken) {
       next('/login')
       Vue.prototype.$message({
         type: 'error',
         message: '请先登录！'
       })
-    } else {
+    }else {
       next()
     }
   }

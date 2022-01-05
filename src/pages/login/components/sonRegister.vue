@@ -29,7 +29,7 @@
 
 <script>
 import selectImg from "./selectImg.vue";
-import { mapState, mapMutations } from "vuex";
+import { mapMutations } from "vuex";
 export default {
   components: { selectImg },
   data() {
@@ -45,7 +45,7 @@ export default {
           { min: 2, max: 8, message: "账号在 2 到 8 个字符之间", trigger: "blur"}
         ],
         password: [
-          { required: true, message: "密码不能为空", trigger: ["blur", "change", "input"]},
+          { required: true, message: "密码不能为空", trigger: ["blur"]},
           { min: 3, max: 8, message: "密码在 3 到 8 个字符之间", trigger: "blur",}
         ]
       }
@@ -57,6 +57,8 @@ export default {
       this.$refs.regFormRef.validate(flag => {
         if(!flag) return
         this.REGISTER_USER(this.regForm)
+        this.regForm.account = ''
+        this.regForm.password = ''
       })
     }
   }

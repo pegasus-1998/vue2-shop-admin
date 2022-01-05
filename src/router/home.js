@@ -5,14 +5,14 @@ const homeRouter = [
         path:'/',
         component: home,
         meta: {
-            title: '淘宝网-淘！我喜欢'
+            title: 'vue2-shop-admin'
         }
     },
     {
         path:'/home',
         component: home,
         meta: {
-            title: '淘宝网-淘！我喜欢'
+            title: 'vue2-shop-admin'
         }
     }
 ]

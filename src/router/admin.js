@@ -13,7 +13,8 @@ const adminRouter = {
             component: () => import('@/pages/admin/routers/welcome'),
             meta: {
                 title: 'admin - welcome',
-                bread: ['admin', 'home', 'welcome']
+                bread: ['admin', 'home', 'welcome'],
+                isNeedLogin: true,
             }
         },
         {

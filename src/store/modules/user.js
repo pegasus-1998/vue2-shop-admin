@@ -42,36 +42,38 @@ const userModule = {
         ]
     },
     getters: {
-        address({users, userIdx, addressIdx}) {
+        address({ users, userIdx, addressIdx }) {
             return users[userIdx].address[addressIdx]
         }
     },
     mutations: {
         CLEAR_TOKEN(state) {
             state.token = ''
+            sessionStorage.setItem('token', '')
         },
         SET_ADDRESS_IDX(state, idx) {
             state.addressIdx = idx
         },
-        SET_ADDRESS({users, userIdx, addressIdx}, obj) {
-            if(obj.isDA) {
+        SET_ADDRESS({ users, userIdx, addressIdx }, obj) {
+            if (obj.isDA) {
                 interchangeArray(users[userIdx].address, 0, addressIdx)
             }
             Object.assign(users[userIdx].address[addressIdx], obj)
         },
-        SET_AUT({users}, id) {  // 修改用户权限
+        SET_AUT({ users }, id) {  // 修改用户权限
             users.some(item => {
-                if(item.id == id) {
+                if (item.id == id) {
                     item.aut = !item.aut
                     return true
                 }
             })
         },
-        REGISTER_USER({users}, obj) { // 注册账号
-            for(let i = 0; i < users.length; i++) {
-                if(users[i].userName == obj.account) {
+        REGISTER_USER({ users }, obj) { // 注册账号
+            for (let i = 0; i < users.length; i++) {
+                if (users[i].userName === obj.account) {
+                    console.log(users[i], obj.account)
                     packMes('warning', '此账号已经存在！')
-                    return false
+                    return
                 }
             }
             users.push({
@@ -85,19 +87,19 @@ const userModule = {
                 address: []
             })
             packMes('success', '注册成功，快去登陆吧')
-            return true
         },
-        LOGIN_USER({users}, {account, password}) {  // 用户登录
-           const userObj = users.find(item => {
-                const { userName, password: p1 } = item
-                return  userName == account && p1 == password
+        LOGIN_USER({ users }, { account, password }) {  // 用户登录
+            const userObj = users.find(item => {
+                return item.userName == account && item.password == password
             })
-            if(userObj) {
+            if (userObj) {
                 const token = vm.$nanoid()
                 userObj.token = token
                 this.state.userModule.token = token
                 packMes('success', '登录成功')
-            }else {
+                vm.$router.push('/home')
+                sessionStorage.setItem('token', token)
+            } else {
                 packMes('warning', '账号密码错误')
             }
         }
