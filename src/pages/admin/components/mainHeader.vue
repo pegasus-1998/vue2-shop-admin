@@ -13,7 +13,7 @@
       </el-breadcrumb>
     </div>
     <div class="right-con">
-      <a href="https://github.com/pegasus-1998/vue2-whole" target="black">
+      <a href="https://github.com/pegasus-1998/vue2-shop-admin" target="black">
         <img src="@/images/github.png"/>
       </a>
       <el-button type="primary" @click="$router.push('/home')">首页</el-button>

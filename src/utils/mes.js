@@ -42,7 +42,7 @@ const bars = [
     {
         index: '3',
         icon: 'el-icon-menu',
-        text: '组件',
+        text: 'components',
         childrens: []
     },
     {

@@ -15,7 +15,8 @@ import 'swiper/src/swiper.scss'
 import * as echarts from 'echarts'
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
-
+import VueI18n from 'vue-i18n'
+import messages from '@/libs/language'
 const options = {
   maxSpreadZoom: 5, // 控制预览图最大的倍数，默认是2倍，我这里改成了原图
   fullscreenEl: true, //控制是否显示右上角全屏按钮
@@ -37,13 +38,19 @@ Vue.use(VueLazyload, {
   // error: require('images/error.png') 
 })
 Vue.use(plugins)
+Vue.use(VueI18n)
 Vue.prototype.$bus = new Vue()
 Vue.prototype.$nanoid = nanoid
 Vue.config.productionTip = false
 Vue.prototype._ = _
 Vue.prototype.$echarts = echarts
 
+const i18n = new VueI18n({
+  locale: 'zh',
+  messages
+})
 const vm = new Vue({
+  i18n,
   router,
   store,
   render: h => h(App)

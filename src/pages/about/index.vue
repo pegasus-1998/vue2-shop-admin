@@ -63,6 +63,11 @@
         >
       </li>
       <li class="item">
+        <a href="https://kazupon.github.io/vue-i18n/zh/" target="black"
+          >Vue I18n: Vue.js 的国际化插件</a
+        >
+      </li>
+      <li class="item">
         <a href="https://github.com/hilongjw/vue-lazyload" target="black"
           >vue-lazyload: vue图片懒加载, 简单好用。</a
         >
