@@ -7,6 +7,7 @@
           <img src="@/images/github.png"/>
         </a>
         <a href="https://github.com/pegasus-1998/vue2-shop-admin/blob/master/LICENSE">MIT</a>
+        <span>vuex is backend, localStroage is sql</span>
       </div>
     </div>
   </div>
@@ -27,16 +28,20 @@
   }
   img {
     width: 48px;
-    margin: 0 15px;
     &:hover {
       transform: scale(1.1);
     }
   }
   a {
     font-size: 16px;
+    margin: 0 12px;
     &:hover {
       color: $default-color;
     }
+  }
+  span {
+    color: #666;
+    font-size: 18px;
   }
 }
 </style>
