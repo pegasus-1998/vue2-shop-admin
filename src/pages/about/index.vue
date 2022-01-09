@@ -178,12 +178,8 @@
       </a>
     </p>
     <p>
-      <img src="@/images/group1.png" alt="" />
-      web前端QQ交流群(1): 1001577356
-    </p>
-    <p>
       <img src="@/images/group2.png" alt="" />
-      web前端QQ交流群(2): 796783263
+      web前端QQ交流群: 796783263
     </p>
   </div>
 </template>

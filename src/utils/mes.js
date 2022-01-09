@@ -43,7 +43,7 @@ const bars = [
         index: '3',
         icon: 'el-icon-menu',
         text: 'components',
-        childrens: []
+        childrens: ['vuedraggable']
     },
     {
         index: '4',

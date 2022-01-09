@@ -4,7 +4,9 @@
     <div class="main-container">
       <main-header :isCollapse.sync='isCollapse'></main-header>
       <path-tars></path-tars>
-      <router-view></router-view>
+      <div class="routers">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -29,9 +31,15 @@ export default {
   user-select: none;
   .main-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 25px;
     height: 100%;
     background-image: linear-gradient(to left, #d9e8ee, #efeff3);
+    .routers{
+      flex: 1;
+      overflow: auto;
+    }
   }
 }
 </style>

@@ -40,6 +40,14 @@ const adminRouter = {
                 title: 'admin - 404',
                 bread: ['admin', 'error', '404']
             }
+        },
+        {
+            path: 'vuedraggable',
+            component: () => import('@/pages/admin/routers/vuedraggable'),
+            meta: {
+                title: 'admin - vuedraggable',
+                bread: ['admin', 'components', 'vuedraggable']
+            }
         }
     ]
 }
