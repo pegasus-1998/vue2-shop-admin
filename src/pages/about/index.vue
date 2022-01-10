@@ -73,6 +73,11 @@
         >
       </li>
       <li class="item">
+        <a href="https://github.com/nuysoft/Mock" target="black"
+          >Mock.js: 生成随机数据，拦截 Ajax 请求</a
+        >
+      </li>
+      <li class="item">
         <a
           href="https://www.npmjs.com/package/vue-piczoom/v/1.0.6"
           target="black"

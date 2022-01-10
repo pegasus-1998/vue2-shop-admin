@@ -80,10 +80,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
   .details {
+    height: 100%;
     display: flex;
-    padding: 65px 0;
+    align-items: center;
     .rightImg {
       left: 20px;
     }

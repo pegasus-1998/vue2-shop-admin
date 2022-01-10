@@ -1,5 +1,6 @@
 <template>
   <div class="nav-date">
+    <img src="@/images/zh.png" @click="changeLan"/>
     <span>{{timers.hour}}</span> :
     <span>{{timers.minute}}</span> :
     <span style="margin-right: 5px;">{{timers.second}}</span>  
@@ -32,9 +33,16 @@ export default {
 </script>
 <style lang="scss" scoped>
   .nav-date {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
     padding-right: 15px;
+    img {
+      cursor: pointer;
+      width: 30px;
+      margin-right: 10px;
+    }
     span {
       display: inline-block;
       letter-spacing: 2px;

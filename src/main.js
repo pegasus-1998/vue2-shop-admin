@@ -17,6 +17,7 @@ import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 import VueI18n from 'vue-i18n'
 import messages from '@/libs/language'
+import '@/mock'
 const options = {
   maxSpreadZoom: 5, // 控制预览图最大的倍数，默认是2倍，我这里改成了原图
   fullscreenEl: true, //控制是否显示右上角全屏按钮
