@@ -2,14 +2,14 @@
   <div class="login">
     <div class="input-login">
       <el-tabs v-model="activeName">
-        <el-tab-pane label="登录" name="sonLogin">
+        <el-tab-pane :label="$t('login')" name="sonLogin">
           <son-login></son-login>
         </el-tab-pane>
-        <el-tab-pane label="注册" name="sonRegister">
+        <el-tab-pane :label="$t('register')" name="sonRegister">
           <son-register></son-register>
         </el-tab-pane>
-        <el-tab-pane label="其它登录" name="three">
-          <el-empty description="敬请期待"></el-empty>
+        <el-tab-pane :label="$t('ol')" name="three">
+          <el-empty :description="$t('st')"></el-empty>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -68,10 +68,10 @@ export default {
       }
       .el-button {
         margin-left: 15px;
-        width: 80px;
+        width: max-content;
         height: 45px;
         font-size: 18px;
-        letter-spacing: 15px;
+        letter-spacing: 3px;
         color: #fff;
       }
       .bottom {

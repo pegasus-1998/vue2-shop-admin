@@ -5,14 +5,14 @@
         <el-input
           type="text"
           v-model="regForm.account"
-          placeholder="请输入账号"
+          :placeholder="$t('pa')"
         />
       </el-form-item>
       <el-form-item prop="password">
         <el-input
           type="text"
           v-model="regForm.password"
-          placeholder="请输入密码"
+          :placeholder="$t('pp')"
         />
       </el-form-item>
     </el-form>
@@ -21,8 +21,8 @@
       :size="68"
       :src="regForm.imgSrc"
     />
-    <el-button type="primary" @click="regEvent">注册</el-button>
-    <el-button type="primary" @click="$router.back()">返回</el-button>
+    <el-button type="primary" @click="regEvent">{{$t('register')}}</el-button>
+    <el-button type="primary" @click="$router.back()">{{$t('back')}}</el-button>
     <select-img :img.sync="regForm.imgSrc" ref="sImg" />
   </div>
 </template>

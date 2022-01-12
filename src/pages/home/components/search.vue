@@ -2,11 +2,11 @@
   <div class="search">
     <el-input
       v-model.trim="value"
-      placeholder="请输入内容"
+      :placeholder="$t('plac')"
       @focus="elState(1)"
       @blur="elState(2)"
     ></el-input>
-    <el-button type="primary" @click="searchRes">搜索</el-button>
+    <el-button type="primary" @click="searchRes">{{$t('search')}}</el-button>
     <ul class="items" v-show="flag">
       <li
         class="item"

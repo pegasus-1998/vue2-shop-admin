@@ -40,7 +40,7 @@
     }
   }
   span {
-    color: #666;
+    color: #999;
     font-size: 18px;
   }
 }

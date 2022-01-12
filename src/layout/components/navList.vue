@@ -1,15 +1,15 @@
 <template>
   <div class="nav-list">
-    <router-link :to="path" active-class="active">首页</router-link>
-    <router-link to="/seckill" active-class="active">秒杀</router-link>
-    <router-link to="/bazaar" active-class="active">主题市场</router-link>
-    <router-link to="/jsx" active-class="active">系列</router-link>
-    <router-link to="/recr" active-class="active">娱乐</router-link>
-    <router-link to="/shopCar" active-class="active">购物车</router-link>
-    <router-link to="/person" active-class="active">个人信息</router-link>
-    <router-link to="/admin" active-class="active">后台管理</router-link>
-    <router-link to="/login" active-class="active">账号</router-link>
-    <router-link to="/about" active-class="active">关于</router-link>
+    <router-link :to="path" active-class="active">{{$t('layoutNav[0]')}}</router-link>
+    <router-link to="/seckill" active-class="active">{{$t('layoutNav[1]')}}</router-link>
+    <router-link to="/bazaar" active-class="active">{{$t('layoutNav[2]')}}</router-link>
+    <router-link to="/jsx" active-class="active">{{$t('layoutNav[3]')}}</router-link>
+    <router-link to="/recr" active-class="active">{{$t('layoutNav[4]')}}</router-link>
+    <router-link to="/shopCar" active-class="active">{{$t('layoutNav[5]')}}</router-link>
+    <router-link to="/person" active-class="active">{{$t('layoutNav[6]')}}</router-link>
+    <router-link to="/admin" active-class="active">{{$t('layoutNav[7]')}}</router-link>
+    <router-link to="/login" active-class="active">{{$t('layoutNav[8]')}}</router-link>
+    <router-link to="/about" active-class="active">{{$t('layoutNav[9]')}}</router-link>
   </div>
 </template>
 <script>

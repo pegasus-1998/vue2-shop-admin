@@ -1,6 +1,6 @@
 <template>
   <div class="nav-date">
-    <el-select v-model="lan" placeholder="请选择">
+    <el-select v-model="lan" @change='change'>
       <el-option v-for="(item, index) in lans" :key="index" :value="item"></el-option>
     </el-select>
     <span>{{timers.hour}}</span> :
@@ -34,8 +34,12 @@ export default {
     this.timers.timer = null
   },
   methods: {
-    changeLan() {
-      
+    change(lan) {
+      if(lan == 'en') {
+        this.$i18n.locale = 'en'
+      }else {
+        this.$i18n.locale = 'zh'
+      }
     }
   }
 }
