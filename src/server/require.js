@@ -1,7 +1,7 @@
 import axios from 'axios'
 import config from './config.json'
 const instance = axios.create({
-    baseURL: config.baseURL,
+    baseURL: '',
     timeout: 3000,
     headers: {
         // 'FH-Token': "",

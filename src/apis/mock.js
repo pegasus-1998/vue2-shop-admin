@@ -44,6 +44,7 @@ function getVideoApi() {
         err => console.log('网络请求出错了')
     )
 }
+
 export {
     getHomeMockApi,
     getGoodShopApi,

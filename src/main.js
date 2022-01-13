@@ -17,6 +17,7 @@ import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 import VueI18n from 'vue-i18n'
 import messages from '@/libs/language'
+import axios from 'axios'
 import '@/mock'
 const options = {
   maxSpreadZoom: 5, // 控制预览图最大的倍数，默认是2倍，我这里改成了原图
@@ -45,6 +46,7 @@ Vue.prototype.$nanoid = nanoid
 Vue.config.productionTip = false
 Vue.prototype._ = _
 Vue.prototype.$echarts = echarts
+Vue.prototype.$http = axios
 
 const i18n = new VueI18n({
   locale: 'zh',
