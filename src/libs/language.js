@@ -1,5 +1,8 @@
 const messages = {
     en: {
+        price: 'price',
+        addCart: 'Add Cart',
+        buyNow: 'Buy now',
         back: 'back',
         login: 'login',
         register: 'register',
@@ -16,6 +19,9 @@ const messages = {
         layoutNav: ['home', 'spike', 'theme',  'jsx', 'enhoy', 'car', 'personal', 'admin', 'account', 'about']
     },
     zh: {
+        price: '价格',
+        addCart: '加入购物车',
+        buyNow: '立即购买',
         back: '返回',
         login: '登录',
         register: '注册',

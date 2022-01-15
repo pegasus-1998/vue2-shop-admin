@@ -7,7 +7,7 @@
        <div class="right-con">
          <p>{{  everyMessage.store}}</p>
          <p>
-           <span>{{$route.query.isSkill? '限时秒杀': '价格'}}</span>
+           <span>{{$route.query.isSkill? '限时秒杀': $t('price')}}</span>
            {{sort}}
           </p>
          <span style="color: red; font-size: 21px">评价：</span>
@@ -19,9 +19,9 @@
            店家货物做工很精美，服务也不错，给好评1个。
           </p>
          <h3>{{ everyMessage.con }}</h3>
-         <el-button type="danger" @click="$router.push('/shopCar')">立即购买</el-button>
-         <el-button type="primary" icon="el-icon-shopping-cart-1" @click="addShopCar()">加入购物车</el-button>
-         <span class="sp" @click="$router.goBack()">返回</span>
+         <el-button type="danger" @click="$router.push('/shopCar')">{{$t('buyNow')}}</el-button>
+         <el-button type="primary" icon="el-icon-shopping-cart-1" @click="addShopCar()">{{$t('addCart')}}</el-button>
+         <span class="sp" @click="$router.goBack()">{{$t('back')}}</span>
        </div>
   </div>
 </template>
